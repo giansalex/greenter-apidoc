@@ -1,0 +1,9 @@
+{
+    "require-dev": {
+        "apigen/apigen": "dev-master",
+        "roave/better-reflection": "dev-master#c87d856"
+    },
+    "require": {
+        "greenter/greenter": "^2.1"
+    }
+}
