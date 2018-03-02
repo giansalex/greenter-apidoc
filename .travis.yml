@@ -12,4 +12,5 @@ script:
   - vendor/bin/apigen generate vendor/greenter --destination docs
  
 after_success:
-  - php -v
+  - chmod +x ./bin/deploy.sh
+  - ./bin/deploy.sh
