@@ -7,6 +7,5 @@ API Documentation for Greenter Packages.
 - [greenter/xml](https://github.com/giansalex/greenter-xml)
 - [greenter/ws](https://github.com/giansalex/greenter-ws)
 - [greenter/xmldsig](https://github.com/giansalex/xmldsig)
-- [greenter/report](https://github.com/giansalex/greenter-report)
 - [greenter/htmltopdf](https://github.com/giansalex/greenter-htmltopdf)
 - [greenter/validation](https://github.com/giansalex/greenter-validation)

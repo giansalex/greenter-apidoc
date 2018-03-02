@@ -1,6 +1,6 @@
 parameters:
     visibilityLevels: [public, protected] # array
-    annotationGroups: [todo, deprecated] # array
+    annotationGroups: [deprecated] # array
     title: "Greenter" # string
     baseUrl: "https://giansalex.github.io/greenter-apidoc" # string
     overwrite: false # bool
