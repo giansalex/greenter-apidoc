@@ -10,3 +10,10 @@ API Referencia para Greenter Packages.
 - [greenter/report](https://github.com/thegreenter/report)
 - [greenter/htmltopdf](https://github.com/thegreenter/htmltopdf)
 - [greenter/validation](https://github.com/thegreenter/validation)
+
+## Build
+
+Ejecutar el siguiente comando, y la documentacion sera generada en la carpeta `build/`
+```sh
+./build.sh
+```
