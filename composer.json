@@ -1,8 +1,9 @@
 {
+    "name": "greenter-api-reference",
+    "description": "Referencia de greenter packages",
     "require": {
-        "greenter/greenter": "^3.0",
-        "greenter/report": "^2.2",
-        "greenter/htmltopdf": "^2.1",
-        "greenter/validator": "^2.1"
-    }
+        "greenter/greenter": "^4.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
