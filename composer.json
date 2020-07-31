@@ -1,5 +1,5 @@
 {
-    "name": "greenter-api-reference",
+    "name": "greenter/api-reference",
     "description": "Referencia de greenter packages",
     "require": {
         "greenter/greenter": "^4.0"
