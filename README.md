@@ -15,5 +15,6 @@ API Referencia para Greenter Packages.
 
 Ejecutar el siguiente comando, y la documentacion sera generada en la carpeta `build/`
 ```sh
+composer install
 ./build.sh
 ```
