@@ -5,12 +5,8 @@
     <meta name="robots" content="index, follow, all" />
     <title>Greenter\XMLSecLibs\XMLSecurityKey | Greenter API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
         <script src="../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
@@ -21,102 +17,74 @@
 
     <body id="class" data-name="class:Greenter_XMLSecLibs_XMLSecurityKey" data-root-path="../../">
             <div id="content">
-        <div id="left-column">
-                <div id="control-panel">
+            <nav id="greenter-header" class="navbar navbar-expand-lg">
+        <h1 class="greenter-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://greenter.dev">Greenter</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://community.greenter.dev">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/thegreenter/greenter"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../">master</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="../../search.html" method="GET">
-            <span class="glyphicon glyphicon-search"></span>
-            <input name="search"
-                   class="typeahead form-control"
-                   type="search"
-                   placeholder="Search">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>
 
-                <div id="api-tree"></div>
+                    <div id="api-tree"></div>
 
-        </div>
-        <div id="right-column">
-                <nav id="site-nav" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../index.html">Greenter API</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../classes.html">Classes</a></li>
-                                            <li><a href="../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../traits.html">Traits</a></li>
-                    <li><a href="../../doc-index.html">Index</a></li>
-                    <li><a href="../../search.html">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../Greenter.html">Greenter</a></li><li class="backslash">\</li><li><a href="../../Greenter/XMLSecLibs.html">XMLSecLibs</a></li><li class="backslash">\</li><li>XMLSecurityKey</li>
-            </ol>
-        </div>
                 <div id="page-content">
-                
+                    
     <div class="page-header">
         <h1>
             XMLSecurityKey
                 
+            &nbsp;
+                <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
         </h1>
     </div>
 
     <p>    class
-    <strong>XMLSecurityKey</strong>
-</p>
+    <strong>XMLSecurityKey</strong></p>
 
         
     
 
-            <div class="description">
-            <p>xmlseclibs.php</p>            <p>Copyright (c) 2007-2016, Robert Richards <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#114;&#x72;&#105;c&#x68;&#97;&#x72;&#100;&#x73;&#64;&#x63;&#100;&#x61;&#116;&#97;&#x7a;&#111;&#x6e;&#101;&#x2e;&#111;&#x72;&#103;">&#114;&#x72;&#105;c&#x68;&#97;&#x72;&#100;&#x73;&#64;&#x63;&#100;&#x61;&#116;&#97;&#x7a;&#111;&#x6e;&#101;&#x2e;&#111;&#x72;&#103;</a>.
-All rights reserved.</p>
-
-<p>Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions
-are met:</p>
-
-<ul>
-<li><p>Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.</p></li>
-<li><p>Redistributions in binary form must reproduce the above copyright
-notice, this list of conditions and the following disclaimer in
-the documentation and/or other materials provided with the
-distribution.</p></li>
-<li><p>Neither the name of Robert Richards nor the names of his
-contributors may be used to endorse or promote products derived
-from this software without specific prior written permission.</p></li>
-</ul>
-
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
-FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
-COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
-BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
-ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
     
     
             <h2>Constants</h2>
@@ -219,6 +187,10 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <td>$type</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_key">
@@ -227,6 +199,10 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <td>$key</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_passphrase">
@@ -235,6 +211,10 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <td>$passphrase</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_iv">
@@ -243,6 +223,10 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <td>$iv</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_name">
@@ -251,6 +235,10 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <td>$name</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_keyChain">
@@ -259,6 +247,10 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <td>$keyChain</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_isEncrypted">
@@ -267,6 +259,10 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <td>$isEncrypted</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_encryptedCtx">
@@ -275,6 +271,10 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <td>$encryptedCtx</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_guid">
@@ -283,6 +283,10 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <td>$guid</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
             </table>
 
@@ -294,165 +298,261 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method___construct">__construct</a>(string $type, null|array $params = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     int|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getSymmetricKeySize">getSymmetricKeySize</a>()
         
                                             <p>Retrieve the key size for the symmetric encryption algorithm.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_generateSessionKey">generateSessionKey</a>()
         
                                             <p>Generates a session key using the openssl-extension.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     static&nbsp;null|string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getRawThumbprint">getRawThumbprint</a>(string $cert)
         
                                             <p>Get the raw thumbprint of a certificate</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_loadKey">loadKey</a>(string $key, bool $isFile = false, bool $isCert = false)
         
                                             <p>Loads the given key, or - with isFile set true - the key from the keyfile.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     mixed|string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_encryptData">encryptData</a>(string $data)
         
                                             <p>Encrypts the given data (string) using the regarding php-extension, depending on the library assigned to algorithm in the contructor.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     mixed|string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_decryptData">decryptData</a>(string $data)
         
                                             <p>Decrypts the given data (string) using the regarding php-extension, depending on the library assigned to algorithm in the contructor.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     mixed|string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_signData">signData</a>(string $data)
         
                                             <p>Signs the data (string) using the extension assigned to the type in the constructor.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     bool|int
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_verifySignature">verifySignature</a>(string $data, string $signature)
         
                                             <p>Verifies the data (string) against the given signature using the extension assigned to the type in the constructor.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     mixed
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getAlgorith">getAlgorith</a>()
         <small><sup><span class="label label-danger">deprecated</span></sup></small>
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     mixed
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getAlgorithm">getAlgorithm</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     static&nbsp;null|string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_makeAsnSegment">makeAsnSegment</a>(int $type, string $string)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     static&nbsp;string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_convertRSA">convertRSA</a>(string $modulus, string $exponent)
         
                                             <p>Hint: Modulus and Exponent must already be base64 decoded</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getX509Certificate">getX509Certificate</a>()
         
                                             <p>Retrieve the X509 certificate this key represents.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getX509Thumbprint">getX509Thumbprint</a>()
         
                                             <p>Get the thumbprint of this X509 certificate.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     static&nbsp;<a href="../../Greenter/XMLSecLibs/XMLSecurityKey.html"><abbr title="Greenter\XMLSecLibs\XMLSecurityKey">XMLSecurityKey</abbr></a>
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_fromEncryptedKeyElement">fromEncryptedKeyElement</a>(<a target="_blank" href="http://php.net/DOMElement">DOMElement</a> $element)
         
                                             <p>Create key from an EncryptedKey-element.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
             </div>
 
@@ -462,7 +562,9 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 110</div>
+        <div class="location">
+                        at line 70
+        </div>
         <code>                    
     <strong>__construct</strong>(string $type, null|array $params = null)
         </code>
@@ -505,7 +607,9 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getSymmetricKeySize">
-        <div class="location">at         line 233</div>
+        <div class="location">
+                        at line 193
+        </div>
         <code>                    int|null
     <strong>getSymmetricKeySize</strong>()
         </code>
@@ -515,9 +619,9 @@ POSSIBILITY OF SUCH DAMAGE.</p>                    </div>
     
 
                     <div class="method-description">
-                                    <p>Retrieve the key size for the symmetric encryption algorithm.</p>                    <p>.</p>
+                                    <p>Retrieve the key size for the symmetric encryption algorithm.</p>                    <p>.&lt;/p&gt;
 
-<p>If the key size is unknown, or this isn't a symmetric encryption algorithm,
+&lt;p&gt;If the key size is unknown, or this isn&#039;t a symmetric encryption algorithm,
 null is returned.</p>                            </div>
                 <div class="tags">
             
@@ -538,7 +642,9 @@ null is returned.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_generateSessionKey">
-        <div class="location">at         line 247</div>
+        <div class="location">
+                        at line 207
+        </div>
         <code>                    string
     <strong>generateSessionKey</strong>()
         </code>
@@ -577,7 +683,9 @@ null is returned.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getRawThumbprint">
-        <div class="location">at         line 281</div>
+        <div class="location">
+                        at line 241
+        </div>
         <code>        static            null|string
     <strong>getRawThumbprint</strong>(string $cert)
         </code>
@@ -617,7 +725,9 @@ null is returned.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_loadKey">
-        <div class="location">at         line 316</div>
+        <div class="location">
+                        at line 276
+        </div>
         <code>                    
     <strong>loadKey</strong>(string $key, bool $isFile = false, bool $isCert = false)
         </code>
@@ -667,7 +777,9 @@ null is returned.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_encryptData">
-        <div class="location">at         line 539</div>
+        <div class="location">
+                        at line 499
+        </div>
         <code>                    mixed|string
     <strong>encryptData</strong>(string $data)
         </code>
@@ -716,7 +828,9 @@ null is returned.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_decryptData">
-        <div class="location">at         line 562</div>
+        <div class="location">
+                        at line 522
+        </div>
         <code>                    mixed|string
     <strong>decryptData</strong>(string $data)
         </code>
@@ -765,7 +879,9 @@ null is returned.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_signData">
-        <div class="location">at         line 585</div>
+        <div class="location">
+                        at line 545
+        </div>
         <code>                    mixed|string
     <strong>signData</strong>(string $data)
         </code>
@@ -814,7 +930,9 @@ null is returned.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_verifySignature">
-        <div class="location">at         line 613</div>
+        <div class="location">
+                        at line 573
+        </div>
         <code>                    bool|int
     <strong>verifySignature</strong>(string $data, string $signature)
         </code>
@@ -827,11 +945,11 @@ null is returned.</p>                            </div>
                                     <p>Verifies the data (string) against the given signature using the extension assigned to the type in the constructor.</p>                    <p>Returns in case of openSSL:
  1 on succesful signature verification,
  0 when signature verification failed,
- -1 if an error occurred during processing.</p>
+ -1 if an error occurred during processing.&lt;/p&gt;
 
-<p>NOTE: be very careful when checking the return value, because in PHP,
+&lt;p&gt;NOTE: be very careful when checking the return value, because in PHP,
 -1 will be cast to True when in boolean context. So always check the
-return value in a strictly typed way, e.g. "$obj->verify(...) === 1".</p>                            </div>
+return value in a strictly typed way, e.g. &quot;$obj-&gt;verify(...) === 1&quot;.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -866,7 +984,9 @@ return value in a strictly typed way, e.g. "$obj->verify(...) === 1".</p>       
             </div>
                     <div class="method-item">
                     <h3 id="method_getAlgorith">
-        <div class="location">at         line 631</div>
+        <div class="location">
+                        at line 591
+        </div>
         <code>                    mixed
     <strong>getAlgorith</strong>()
         <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
@@ -912,7 +1032,9 @@ return value in a strictly typed way, e.g. "$obj->verify(...) === 1".</p>       
             </div>
                     <div class="method-item">
                     <h3 id="method_getAlgorithm">
-        <div class="location">at         line 639</div>
+        <div class="location">
+                        at line 599
+        </div>
         <code>                    mixed
     <strong>getAlgorithm</strong>()
         </code>
@@ -940,7 +1062,9 @@ return value in a strictly typed way, e.g. "$obj->verify(...) === 1".</p>       
             </div>
                     <div class="method-item">
                     <h3 id="method_makeAsnSegment">
-        <div class="location">at         line 650</div>
+        <div class="location">
+                        at line 610
+        </div>
         <code>        static            null|string
     <strong>makeAsnSegment</strong>(int $type, string $string)
         </code>
@@ -983,7 +1107,9 @@ return value in a strictly typed way, e.g. "$obj->verify(...) === 1".</p>       
             </div>
                     <div class="method-item">
                     <h3 id="method_convertRSA">
-        <div class="location">at         line 683</div>
+        <div class="location">
+                        at line 643
+        </div>
         <code>        static            string
     <strong>convertRSA</strong>(string $modulus, string $exponent)
         </code>
@@ -1028,7 +1154,9 @@ return value in a strictly typed way, e.g. "$obj->verify(...) === 1".</p>       
             </div>
                     <div class="method-item">
                     <h3 id="method_getX509Certificate">
-        <div class="location">at         line 712</div>
+        <div class="location">
+                        at line 672
+        </div>
         <code>                    string
     <strong>getX509Certificate</strong>()
         </code>
@@ -1047,7 +1175,7 @@ an X509 certificate.</p>                            </div>
                     <table class="table table-condensed">
         <tr>
             <td>string</td>
-            <td>The X509 certificate or null if this key doesn't represent an X509-certificate.</td>
+            <td>The X509 certificate or null if this key doesn&#039;t represent an X509-certificate.</td>
         </tr>
     </table>
 
@@ -1059,7 +1187,9 @@ an X509 certificate.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getX509Thumbprint">
-        <div class="location">at         line 726</div>
+        <div class="location">
+                        at line 686
+        </div>
         <code>                    string
     <strong>getX509Thumbprint</strong>()
         </code>
@@ -1071,7 +1201,7 @@ an X509 certificate.</p>                            </div>
                     <div class="method-description">
                                     <p>Get the thumbprint of this X509 certificate.</p>                    <p>Returns:
  The thumbprint as a lowercase 40-character hexadecimal number, or null
- if this isn't a X509 certificate.</p>                            </div>
+ if this isn&#039;t a X509 certificate.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1091,7 +1221,9 @@ an X509 certificate.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_fromEncryptedKeyElement">
-        <div class="location">at         line 740</div>
+        <div class="location">
+                        at line 700
+        </div>
         <code>        static            <a href="../../Greenter/XMLSecLibs/XMLSecurityKey.html"><abbr title="Greenter\XMLSecLibs\XMLSecurityKey">XMLSecurityKey</abbr></a>
     <strong>fromEncryptedKeyElement</strong>(<a target="_blank" href="http://php.net/DOMElement">DOMElement</a> $element)
         </code>
@@ -1141,11 +1273,13 @@ an X509 certificate.</p>                            </div>
             </div>
 
     
-            </div>
-                <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/giansalex">@giansalex</a>. Source code can be found on <a href="https://github.com/thegreenter/reference">GitHub</a>.</p>
     </div>
 
+            </div>
         </div>
     </div>
     </body>

@@ -5,12 +5,8 @@
     <meta name="robots" content="index, follow, all" />
     <title>Greenter\Model\Despatch\Shipment | Greenter API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
@@ -21,66 +17,70 @@
 
     <body id="class" data-name="class:Greenter_Model_Despatch_Shipment" data-root-path="../../../">
             <div id="content">
-        <div id="left-column">
-                <div id="control-panel">
+            <nav id="greenter-header" class="navbar navbar-expand-lg">
+        <h1 class="greenter-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://greenter.dev">Greenter</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://community.greenter.dev">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/thegreenter/greenter"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="../../../search.html" method="GET">
-            <span class="glyphicon glyphicon-search"></span>
-            <input name="search"
-                   class="typeahead form-control"
-                   type="search"
-                   placeholder="Search">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>
 
-                <div id="api-tree"></div>
+                    <div id="api-tree"></div>
 
-        </div>
-        <div id="right-column">
-                <nav id="site-nav" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../../index.html">Greenter API</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../traits.html">Traits</a></li>
-                    <li><a href="../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../search.html">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Greenter.html">Greenter</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Model.html">Model</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Model/Despatch.html">Despatch</a></li><li class="backslash">\</li><li>Shipment</li>
-            </ol>
-        </div>
                 <div id="page-content">
-                
+                    
     <div class="page-header">
         <h1>
             Shipment
                 
+            &nbsp;
+                <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
         </h1>
     </div>
 
     <p>    class
-    <strong>Shipment</strong>
-</p>
+    <strong>Shipment</strong></p>
 
         
     
@@ -96,289 +96,445 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getCodTraslado">getCodTraslado</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setCodTraslado">setCodTraslado</a>(string $codTraslado)
+                <div class="col-md-6 type">
+                    <a href="#method_setCodTraslado">setCodTraslado</a>(string|null $codTraslado)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getDesTraslado">getDesTraslado</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setDesTraslado">setDesTraslado</a>(string $desTraslado)
+                <div class="col-md-6 type">
+                    <a href="#method_setDesTraslado">setDesTraslado</a>(string|null $desTraslado)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    bool|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_isIndTransbordo">isIndTransbordo</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setIndTransbordo">setIndTransbordo</a>(bool $indTransbordo)
+                <div class="col-md-6 type">
+                    <a href="#method_setIndTransbordo">setIndTransbordo</a>(bool|null $indTransbordo)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    float|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getPesoTotal">getPesoTotal</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setPesoTotal">setPesoTotal</a>(float $pesoTotal)
+                <div class="col-md-6 type">
+                    <a href="#method_setPesoTotal">setPesoTotal</a>(float|null $pesoTotal)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getUndPesoTotal">getUndPesoTotal</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setUndPesoTotal">setUndPesoTotal</a>(string $undPesoTotal)
+                <div class="col-md-6 type">
+                    <a href="#method_setUndPesoTotal">setUndPesoTotal</a>(string|null $undPesoTotal)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    int
+                    int|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getNumBultos">getNumBultos</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setNumBultos">setNumBultos</a>(int $numBultos)
+                <div class="col-md-6 type">
+                    <a href="#method_setNumBultos">setNumBultos</a>(int|null $numBultos)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getModTraslado">getModTraslado</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setModTraslado">setModTraslado</a>(string $modTraslado)
+                <div class="col-md-6 type">
+                    <a href="#method_setModTraslado">setModTraslado</a>(string|null $modTraslado)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getFecTraslado">getFecTraslado</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setFecTraslado">setFecTraslado</a>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $fecTraslado)
+                <div class="col-md-6 type">
+                    <a href="#method_setFecTraslado">setFecTraslado</a>(<a target="_blank" href="http://php.net/DateTime">DateTime</a>|null $fecTraslado)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getNumContenedor">getNumContenedor</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setNumContenedor">setNumContenedor</a>(string $numContenedor)
+                <div class="col-md-6 type">
+                    <a href="#method_setNumContenedor">setNumContenedor</a>(string|null $numContenedor)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getCodPuerto">getCodPuerto</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setCodPuerto">setCodPuerto</a>(string $codPuerto)
+                <div class="col-md-6 type">
+                    <a href="#method_setCodPuerto">setCodPuerto</a>(string|null $codPuerto)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Greenter/Model/Despatch/Transportist.html"><abbr title="Greenter\Model\Despatch\Transportist">Transportist</abbr></a>
+                    <abbr title="Greenter\Model\Despatch\Greenter\Model\Despatch\Transportist">Transportist</abbr>|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getTransportista">getTransportista</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setTransportista">setTransportista</a>(<a href="../../../Greenter/Model/Despatch/Transportist.html"><abbr title="Greenter\Model\Despatch\Transportist">Transportist</abbr></a> $transportista)
+                <div class="col-md-6 type">
+                    <a href="#method_setTransportista">setTransportista</a>(<a href="../../../Greenter/Model/Despatch/Transportist.html"><abbr title="Greenter\Model\Despatch\Transportist">Transportist</abbr></a>|null $transportista)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>
+                    <abbr title="Greenter\Model\Despatch\Greenter\Model\Despatch\Direction">Direction</abbr>|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getLlegada">getLlegada</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setLlegada">setLlegada</a>(<a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a> $llegada)
+                <div class="col-md-6 type">
+                    <a href="#method_setLlegada">setLlegada</a>(<a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>|null $llegada)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>
+                    <abbr title="Greenter\Model\Despatch\Greenter\Model\Despatch\Direction">Direction</abbr>|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getPartida">getPartida</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setPartida">setPartida</a>(<a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a> $partida)
+                <div class="col-md-6 type">
+                    <a href="#method_setPartida">setPartida</a>(<a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>|null $partida)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
             </div>
 
@@ -388,8 +544,10 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getCodTraslado">
-        <div class="location">at         line 86</div>
-        <code>                    string
+        <div class="location">
+                        at line 90
+        </div>
+        <code>                    string|null
     <strong>getCodTraslado</strong>()
         </code>
     </h3>
@@ -403,7 +561,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -416,9 +574,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setCodTraslado">
-        <div class="location">at         line 96</div>
+        <div class="location">
+                        at line 100
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setCodTraslado</strong>(string $codTraslado)
+    <strong>setCodTraslado</strong>(string|null $codTraslado)
         </code>
     </h3>
     <div class="details">
@@ -430,7 +590,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$codTraslado</td>
                 <td></td>
             </tr>
@@ -454,8 +614,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDesTraslado">
-        <div class="location">at         line 106</div>
-        <code>                    string
+        <div class="location">
+                        at line 110
+        </div>
+        <code>                    string|null
     <strong>getDesTraslado</strong>()
         </code>
     </h3>
@@ -469,7 +631,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -482,9 +644,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDesTraslado">
-        <div class="location">at         line 116</div>
+        <div class="location">
+                        at line 120
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setDesTraslado</strong>(string $desTraslado)
+    <strong>setDesTraslado</strong>(string|null $desTraslado)
         </code>
     </h3>
     <div class="details">
@@ -496,7 +660,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$desTraslado</td>
                 <td></td>
             </tr>
@@ -520,8 +684,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isIndTransbordo">
-        <div class="location">at         line 126</div>
-        <code>                    bool
+        <div class="location">
+                        at line 130
+        </div>
+        <code>                    bool|null
     <strong>isIndTransbordo</strong>()
         </code>
     </h3>
@@ -535,7 +701,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>bool|null</td>
             <td></td>
         </tr>
     </table>
@@ -548,9 +714,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setIndTransbordo">
-        <div class="location">at         line 136</div>
+        <div class="location">
+                        at line 140
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setIndTransbordo</strong>(bool $indTransbordo)
+    <strong>setIndTransbordo</strong>(bool|null $indTransbordo)
         </code>
     </h3>
     <div class="details">
@@ -562,7 +730,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>bool</td>
+                <td>bool|null</td>
                 <td>$indTransbordo</td>
                 <td></td>
             </tr>
@@ -586,8 +754,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPesoTotal">
-        <div class="location">at         line 146</div>
-        <code>                    float
+        <div class="location">
+                        at line 150
+        </div>
+        <code>                    float|null
     <strong>getPesoTotal</strong>()
         </code>
     </h3>
@@ -601,7 +771,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>float|null</td>
             <td></td>
         </tr>
     </table>
@@ -614,9 +784,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPesoTotal">
-        <div class="location">at         line 156</div>
+        <div class="location">
+                        at line 160
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setPesoTotal</strong>(float $pesoTotal)
+    <strong>setPesoTotal</strong>(float|null $pesoTotal)
         </code>
     </h3>
     <div class="details">
@@ -628,7 +800,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>float</td>
+                <td>float|null</td>
                 <td>$pesoTotal</td>
                 <td></td>
             </tr>
@@ -652,8 +824,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUndPesoTotal">
-        <div class="location">at         line 166</div>
-        <code>                    string
+        <div class="location">
+                        at line 170
+        </div>
+        <code>                    string|null
     <strong>getUndPesoTotal</strong>()
         </code>
     </h3>
@@ -667,7 +841,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -680,9 +854,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setUndPesoTotal">
-        <div class="location">at         line 176</div>
+        <div class="location">
+                        at line 180
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setUndPesoTotal</strong>(string $undPesoTotal)
+    <strong>setUndPesoTotal</strong>(string|null $undPesoTotal)
         </code>
     </h3>
     <div class="details">
@@ -694,7 +870,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$undPesoTotal</td>
                 <td></td>
             </tr>
@@ -718,8 +894,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getNumBultos">
-        <div class="location">at         line 186</div>
-        <code>                    int
+        <div class="location">
+                        at line 190
+        </div>
+        <code>                    int|null
     <strong>getNumBultos</strong>()
         </code>
     </h3>
@@ -733,7 +911,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>int</td>
+            <td>int|null</td>
             <td></td>
         </tr>
     </table>
@@ -746,9 +924,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setNumBultos">
-        <div class="location">at         line 196</div>
+        <div class="location">
+                        at line 200
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setNumBultos</strong>(int $numBultos)
+    <strong>setNumBultos</strong>(int|null $numBultos)
         </code>
     </h3>
     <div class="details">
@@ -760,7 +940,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int</td>
+                <td>int|null</td>
                 <td>$numBultos</td>
                 <td></td>
             </tr>
@@ -784,8 +964,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModTraslado">
-        <div class="location">at         line 206</div>
-        <code>                    string
+        <div class="location">
+                        at line 210
+        </div>
+        <code>                    string|null
     <strong>getModTraslado</strong>()
         </code>
     </h3>
@@ -799,7 +981,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -812,9 +994,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setModTraslado">
-        <div class="location">at         line 216</div>
+        <div class="location">
+                        at line 220
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setModTraslado</strong>(string $modTraslado)
+    <strong>setModTraslado</strong>(string|null $modTraslado)
         </code>
     </h3>
     <div class="details">
@@ -826,7 +1010,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$modTraslado</td>
                 <td></td>
             </tr>
@@ -850,8 +1034,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFecTraslado">
-        <div class="location">at         line 226</div>
-        <code>                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+        <div class="location">
+                        at line 230
+        </div>
+        <code>                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>|null
     <strong>getFecTraslado</strong>()
         </code>
     </h3>
@@ -865,7 +1051,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a>|null</td>
             <td></td>
         </tr>
     </table>
@@ -878,9 +1064,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setFecTraslado">
-        <div class="location">at         line 236</div>
+        <div class="location">
+                        at line 240
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setFecTraslado</strong>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $fecTraslado)
+    <strong>setFecTraslado</strong>(<a target="_blank" href="http://php.net/DateTime">DateTime</a>|null $fecTraslado)
         </code>
     </h3>
     <div class="details">
@@ -892,7 +1080,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a>|null</td>
                 <td>$fecTraslado</td>
                 <td></td>
             </tr>
@@ -916,8 +1104,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getNumContenedor">
-        <div class="location">at         line 246</div>
-        <code>                    string
+        <div class="location">
+                        at line 250
+        </div>
+        <code>                    string|null
     <strong>getNumContenedor</strong>()
         </code>
     </h3>
@@ -931,7 +1121,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -944,9 +1134,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setNumContenedor">
-        <div class="location">at         line 256</div>
+        <div class="location">
+                        at line 260
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setNumContenedor</strong>(string $numContenedor)
+    <strong>setNumContenedor</strong>(string|null $numContenedor)
         </code>
     </h3>
     <div class="details">
@@ -958,7 +1150,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$numContenedor</td>
                 <td></td>
             </tr>
@@ -982,8 +1174,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCodPuerto">
-        <div class="location">at         line 266</div>
-        <code>                    string
+        <div class="location">
+                        at line 270
+        </div>
+        <code>                    string|null
     <strong>getCodPuerto</strong>()
         </code>
     </h3>
@@ -997,7 +1191,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -1010,9 +1204,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setCodPuerto">
-        <div class="location">at         line 276</div>
+        <div class="location">
+                        at line 280
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setCodPuerto</strong>(string $codPuerto)
+    <strong>setCodPuerto</strong>(string|null $codPuerto)
         </code>
     </h3>
     <div class="details">
@@ -1024,7 +1220,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$codPuerto</td>
                 <td></td>
             </tr>
@@ -1048,8 +1244,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTransportista">
-        <div class="location">at         line 286</div>
-        <code>                    <a href="../../../Greenter/Model/Despatch/Transportist.html"><abbr title="Greenter\Model\Despatch\Transportist">Transportist</abbr></a>
+        <div class="location">
+                        at line 290
+        </div>
+        <code>                    <abbr title="Greenter\Model\Despatch\Greenter\Model\Despatch\Transportist">Transportist</abbr>|null
     <strong>getTransportista</strong>()
         </code>
     </h3>
@@ -1063,7 +1261,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Greenter/Model/Despatch/Transportist.html"><abbr title="Greenter\Model\Despatch\Transportist">Transportist</abbr></a></td>
+            <td><abbr title="Greenter\Model\Despatch\Greenter\Model\Despatch\Transportist">Transportist</abbr>|null</td>
             <td></td>
         </tr>
     </table>
@@ -1076,9 +1274,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setTransportista">
-        <div class="location">at         line 296</div>
+        <div class="location">
+                        at line 300
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setTransportista</strong>(<a href="../../../Greenter/Model/Despatch/Transportist.html"><abbr title="Greenter\Model\Despatch\Transportist">Transportist</abbr></a> $transportista)
+    <strong>setTransportista</strong>(<a href="../../../Greenter/Model/Despatch/Transportist.html"><abbr title="Greenter\Model\Despatch\Transportist">Transportist</abbr></a>|null $transportista)
         </code>
     </h3>
     <div class="details">
@@ -1090,7 +1290,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Greenter/Model/Despatch/Transportist.html"><abbr title="Greenter\Model\Despatch\Transportist">Transportist</abbr></a></td>
+                <td><a href="../../../Greenter/Model/Despatch/Transportist.html"><abbr title="Greenter\Model\Despatch\Transportist">Transportist</abbr></a>|null</td>
                 <td>$transportista</td>
                 <td></td>
             </tr>
@@ -1114,8 +1314,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLlegada">
-        <div class="location">at         line 306</div>
-        <code>                    <a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>
+        <div class="location">
+                        at line 310
+        </div>
+        <code>                    <abbr title="Greenter\Model\Despatch\Greenter\Model\Despatch\Direction">Direction</abbr>|null
     <strong>getLlegada</strong>()
         </code>
     </h3>
@@ -1129,7 +1331,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a></td>
+            <td><abbr title="Greenter\Model\Despatch\Greenter\Model\Despatch\Direction">Direction</abbr>|null</td>
             <td></td>
         </tr>
     </table>
@@ -1142,9 +1344,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setLlegada">
-        <div class="location">at         line 316</div>
+        <div class="location">
+                        at line 320
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setLlegada</strong>(<a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a> $llegada)
+    <strong>setLlegada</strong>(<a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>|null $llegada)
         </code>
     </h3>
     <div class="details">
@@ -1156,7 +1360,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a></td>
+                <td><a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>|null</td>
                 <td>$llegada</td>
                 <td></td>
             </tr>
@@ -1180,8 +1384,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPartida">
-        <div class="location">at         line 326</div>
-        <code>                    <a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>
+        <div class="location">
+                        at line 330
+        </div>
+        <code>                    <abbr title="Greenter\Model\Despatch\Greenter\Model\Despatch\Direction">Direction</abbr>|null
     <strong>getPartida</strong>()
         </code>
     </h3>
@@ -1195,7 +1401,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a></td>
+            <td><abbr title="Greenter\Model\Despatch\Greenter\Model\Despatch\Direction">Direction</abbr>|null</td>
             <td></td>
         </tr>
     </table>
@@ -1208,9 +1414,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPartida">
-        <div class="location">at         line 336</div>
+        <div class="location">
+                        at line 340
+        </div>
         <code>                    <a href="../../../Greenter/Model/Despatch/Shipment.html"><abbr title="Greenter\Model\Despatch\Shipment">Shipment</abbr></a>
-    <strong>setPartida</strong>(<a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a> $partida)
+    <strong>setPartida</strong>(<a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>|null $partida)
         </code>
     </h3>
     <div class="details">
@@ -1222,7 +1430,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a></td>
+                <td><a href="../../../Greenter/Model/Despatch/Direction.html"><abbr title="Greenter\Model\Despatch\Direction">Direction</abbr></a>|null</td>
                 <td>$partida</td>
                 <td></td>
             </tr>
@@ -1247,11 +1455,13 @@
             </div>
 
     
-            </div>
-                <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/giansalex">@giansalex</a>. Source code can be found on <a href="https://github.com/thegreenter/reference">GitHub</a>.</p>
     </div>
 
+            </div>
         </div>
     </div>
     </body>

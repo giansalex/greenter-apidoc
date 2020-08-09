@@ -5,12 +5,8 @@
     <meta name="robots" content="index, follow, all" />
     <title>Greenter\Model\Response\BaseResult | Greenter API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
@@ -21,66 +17,70 @@
 
     <body id="class" data-name="class:Greenter_Model_Response_BaseResult" data-root-path="../../../">
             <div id="content">
-        <div id="left-column">
-                <div id="control-panel">
+            <nav id="greenter-header" class="navbar navbar-expand-lg">
+        <h1 class="greenter-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://greenter.dev">Greenter</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://community.greenter.dev">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/thegreenter/greenter"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="../../../search.html" method="GET">
-            <span class="glyphicon glyphicon-search"></span>
-            <input name="search"
-                   class="typeahead form-control"
-                   type="search"
-                   placeholder="Search">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>
 
-                <div id="api-tree"></div>
+                    <div id="api-tree"></div>
 
-        </div>
-        <div id="right-column">
-                <nav id="site-nav" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../../index.html">Greenter API</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../traits.html">Traits</a></li>
-                    <li><a href="../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../search.html">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Greenter.html">Greenter</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Model.html">Model</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Model/Response.html">Response</a></li><li class="backslash">\</li><li>BaseResult</li>
-            </ol>
-        </div>
                 <div id="page-content">
-                
+                    
     <div class="page-header">
         <h1>
             BaseResult
                 
+            &nbsp;
+                <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
         </h1>
     </div>
 
     <p>    class
-    <strong>BaseResult</strong>
-</p>
+    <strong>BaseResult</strong></p>
 
         
     
@@ -100,6 +100,10 @@
                 <td>$success</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_error">
@@ -108,6 +112,10 @@
                 <td>$error</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
             </table>
 
@@ -119,55 +127,85 @@
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method___construct">__construct</a>()
         
                                             <p>BaseResult constructor.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    bool|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_isSuccess">isSuccess</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    $this
+                    <a href="../../../Greenter/Model/Response/BaseResult.html"><abbr title="Greenter\Model\Response\BaseResult">BaseResult</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setSuccess">setSuccess</a>(bool $success)
+                <div class="col-md-6 type">
+                    <a href="#method_setSuccess">setSuccess</a>(bool|null $success)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a>
+                    <abbr title="Greenter\Model\Response\Greenter\Model\Response\Error">Error</abbr>|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getError">getError</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    $this
+                    <a href="../../../Greenter/Model/Response/BaseResult.html"><abbr title="Greenter\Model\Response\BaseResult">BaseResult</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setError">setError</a>(<a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a> $error)
+                <div class="col-md-6 type">
+                    <a href="#method_setError">setError</a>(<a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a>|null $error)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
             </div>
 
@@ -177,7 +215,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 29</div>
+        <div class="location">
+                        at line 31
+        </div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -198,8 +238,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isSuccess">
-        <div class="location">at         line 37</div>
-        <code>                    bool
+        <div class="location">
+                        at line 39
+        </div>
+        <code>                    bool|null
     <strong>isSuccess</strong>()
         </code>
     </h3>
@@ -213,7 +255,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>bool|null</td>
             <td></td>
         </tr>
     </table>
@@ -226,9 +268,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setSuccess">
-        <div class="location">at         line 47</div>
-        <code>                    $this
-    <strong>setSuccess</strong>(bool $success)
+        <div class="location">
+                        at line 49
+        </div>
+        <code>                    <a href="../../../Greenter/Model/Response/BaseResult.html"><abbr title="Greenter\Model\Response\BaseResult">BaseResult</abbr></a>
+    <strong>setSuccess</strong>(bool|null $success)
         </code>
     </h3>
     <div class="details">
@@ -240,7 +284,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>bool</td>
+                <td>bool|null</td>
                 <td>$success</td>
                 <td></td>
             </tr>
@@ -251,7 +295,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>$this</td>
+            <td><a href="../../../Greenter/Model/Response/BaseResult.html"><abbr title="Greenter\Model\Response\BaseResult">BaseResult</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -264,8 +308,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getError">
-        <div class="location">at         line 57</div>
-        <code>                    <a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a>
+        <div class="location">
+                        at line 59
+        </div>
+        <code>                    <abbr title="Greenter\Model\Response\Greenter\Model\Response\Error">Error</abbr>|null
     <strong>getError</strong>()
         </code>
     </h3>
@@ -279,7 +325,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a></td>
+            <td><abbr title="Greenter\Model\Response\Greenter\Model\Response\Error">Error</abbr>|null</td>
             <td></td>
         </tr>
     </table>
@@ -292,9 +338,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setError">
-        <div class="location">at         line 67</div>
-        <code>                    $this
-    <strong>setError</strong>(<a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a> $error)
+        <div class="location">
+                        at line 69
+        </div>
+        <code>                    <a href="../../../Greenter/Model/Response/BaseResult.html"><abbr title="Greenter\Model\Response\BaseResult">BaseResult</abbr></a>
+    <strong>setError</strong>(<a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a>|null $error)
         </code>
     </h3>
     <div class="details">
@@ -306,7 +354,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a></td>
+                <td><a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a>|null</td>
                 <td>$error</td>
                 <td></td>
             </tr>
@@ -317,7 +365,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>$this</td>
+            <td><a href="../../../Greenter/Model/Response/BaseResult.html"><abbr title="Greenter\Model\Response\BaseResult">BaseResult</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -331,11 +379,13 @@
             </div>
 
     
-            </div>
-                <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/giansalex">@giansalex</a>. Source code can be found on <a href="https://github.com/thegreenter/reference">GitHub</a>.</p>
     </div>
 
+            </div>
         </div>
     </div>
     </body>

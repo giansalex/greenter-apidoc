@@ -5,12 +5,8 @@
     <meta name="robots" content="index, follow, all" />
     <title>Greenter\Model\Sale\Receipt | Greenter API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
@@ -21,67 +17,71 @@
 
     <body id="class" data-name="class:Greenter_Model_Sale_Receipt" data-root-path="../../../">
             <div id="content">
-        <div id="left-column">
-                <div id="control-panel">
+            <nav id="greenter-header" class="navbar navbar-expand-lg">
+        <h1 class="greenter-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://greenter.dev">Greenter</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://community.greenter.dev">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/thegreenter/greenter"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="../../../search.html" method="GET">
-            <span class="glyphicon glyphicon-search"></span>
-            <input name="search"
-                   class="typeahead form-control"
-                   type="search"
-                   placeholder="Search">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>
 
-                <div id="api-tree"></div>
+                    <div id="api-tree"></div>
 
-        </div>
-        <div id="right-column">
-                <nav id="site-nav" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../../index.html">Greenter API</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../traits.html">Traits</a></li>
-                    <li><a href="../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../search.html">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Greenter.html">Greenter</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Model.html">Model</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Model/Sale.html">Sale</a></li><li class="backslash">\</li><li>Receipt</li>
-            </ol>
-        </div>
                 <div id="page-content">
-                
+                    
     <div class="page-header">
         <h1>
             Receipt
                 
+            &nbsp;
+                <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
         </h1>
     </div>
 
     <p>    class
     <strong>Receipt</strong>        implements
-        <a href="../../../Greenter/Model/DocumentInterface.html"><abbr title="Greenter\Model\DocumentInterface">DocumentInterface</abbr></a>
-</p>
+        <a href="../../../Greenter/Model/DocumentInterface.html"><abbr title="Greenter\Model\DocumentInterface">DocumentInterface</abbr></a></p>
 
         
     
@@ -97,255 +97,393 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Greenter/Model/Company/Company.html"><abbr title="Greenter\Model\Company\Company">Company</abbr></a>
+                    <abbr title="Greenter\Model\Sale\Greenter\Model\Company\Company">Company</abbr>|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getPerson">getPerson</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setPerson">setPerson</a>(<a href="../../../Greenter/Model/Company/Company.html"><abbr title="Greenter\Model\Company\Company">Company</abbr></a> $person)
+                <div class="col-md-6 type">
+                    <a href="#method_setPerson">setPerson</a>(<a href="../../../Greenter/Model/Company/Company.html"><abbr title="Greenter\Model\Company\Company">Company</abbr></a>|null $person)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Greenter/Model/Client/Client.html"><abbr title="Greenter\Model\Client\Client">Client</abbr></a>
+                    <abbr title="Greenter\Model\Sale\Greenter\Model\Client\Client">Client</abbr>|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getReceptor">getReceptor</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setReceptor">setReceptor</a>(<a href="../../../Greenter/Model/Client/Client.html"><abbr title="Greenter\Model\Client\Client">Client</abbr></a> $receptor)
+                <div class="col-md-6 type">
+                    <a href="#method_setReceptor">setReceptor</a>(<a href="../../../Greenter/Model/Client/Client.html"><abbr title="Greenter\Model\Client\Client">Client</abbr></a>|null $receptor)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getSerie">getSerie</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setSerie">setSerie</a>(mixed $serie)
+                <div class="col-md-6 type">
+                    <a href="#method_setSerie">setSerie</a>(string|null $serie)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getCorrelativo">getCorrelativo</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setCorrelativo">setCorrelativo</a>(string $correlativo)
+                <div class="col-md-6 type">
+                    <a href="#method_setCorrelativo">setCorrelativo</a>(string|null $correlativo)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+                    <a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getFechaEmision">getFechaEmision</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setFechaEmision">setFechaEmision</a>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $fechaEmision)
+                <div class="col-md-6 type">
+                    <a href="#method_setFechaEmision">setFechaEmision</a>(<a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>|null $fechaEmision)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getConcepto">getConcepto</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setConcepto">setConcepto</a>(string $concepto)
+                <div class="col-md-6 type">
+                    <a href="#method_setConcepto">setConcepto</a>(string|null $concepto)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getMontoLetras">getMontoLetras</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setMontoLetras">setMontoLetras</a>(string $montoLetras)
+                <div class="col-md-6 type">
+                    <a href="#method_setMontoLetras">setMontoLetras</a>(string|null $montoLetras)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    float|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getSubTotal">getSubTotal</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setSubTotal">setSubTotal</a>(float $subTotal)
+                <div class="col-md-6 type">
+                    <a href="#method_setSubTotal">setSubTotal</a>(float|null $subTotal)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    float|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getRetencion">getRetencion</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setRetencion">setRetencion</a>(float $retencion)
+                <div class="col-md-6 type">
+                    <a href="#method_setRetencion">setRetencion</a>(float|null $retencion)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    float|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getPorcentaje">getPorcentaje</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setPorcentaje">setPorcentaje</a>(float $porcentaje)
+                <div class="col-md-6 type">
+                    <a href="#method_setPorcentaje">setPorcentaje</a>(float|null $porcentaje)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    float|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getTotal">getTotal</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setTotal">setTotal</a>(float $total)
+                <div class="col-md-6 type">
+                    <a href="#method_setTotal">setTotal</a>(float|null $total)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getName">getName</a>()
         
                                             <p>Get Name for Document.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
             </div>
 
@@ -355,8 +493,10 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getPerson">
-        <div class="location">at         line 102</div>
-        <code>                    <a href="../../../Greenter/Model/Company/Company.html"><abbr title="Greenter\Model\Company\Company">Company</abbr></a>
+        <div class="location">
+                        at line 105
+        </div>
+        <code>                    <abbr title="Greenter\Model\Sale\Greenter\Model\Company\Company">Company</abbr>|null
     <strong>getPerson</strong>()
         </code>
     </h3>
@@ -370,7 +510,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Greenter/Model/Company/Company.html"><abbr title="Greenter\Model\Company\Company">Company</abbr></a></td>
+            <td><abbr title="Greenter\Model\Sale\Greenter\Model\Company\Company">Company</abbr>|null</td>
             <td></td>
         </tr>
     </table>
@@ -383,9 +523,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPerson">
-        <div class="location">at         line 112</div>
+        <div class="location">
+                        at line 115
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setPerson</strong>(<a href="../../../Greenter/Model/Company/Company.html"><abbr title="Greenter\Model\Company\Company">Company</abbr></a> $person)
+    <strong>setPerson</strong>(<a href="../../../Greenter/Model/Company/Company.html"><abbr title="Greenter\Model\Company\Company">Company</abbr></a>|null $person)
         </code>
     </h3>
     <div class="details">
@@ -397,7 +539,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Greenter/Model/Company/Company.html"><abbr title="Greenter\Model\Company\Company">Company</abbr></a></td>
+                <td><a href="../../../Greenter/Model/Company/Company.html"><abbr title="Greenter\Model\Company\Company">Company</abbr></a>|null</td>
                 <td>$person</td>
                 <td></td>
             </tr>
@@ -421,8 +563,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getReceptor">
-        <div class="location">at         line 122</div>
-        <code>                    <a href="../../../Greenter/Model/Client/Client.html"><abbr title="Greenter\Model\Client\Client">Client</abbr></a>
+        <div class="location">
+                        at line 125
+        </div>
+        <code>                    <abbr title="Greenter\Model\Sale\Greenter\Model\Client\Client">Client</abbr>|null
     <strong>getReceptor</strong>()
         </code>
     </h3>
@@ -436,7 +580,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Greenter/Model/Client/Client.html"><abbr title="Greenter\Model\Client\Client">Client</abbr></a></td>
+            <td><abbr title="Greenter\Model\Sale\Greenter\Model\Client\Client">Client</abbr>|null</td>
             <td></td>
         </tr>
     </table>
@@ -449,9 +593,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setReceptor">
-        <div class="location">at         line 132</div>
+        <div class="location">
+                        at line 135
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setReceptor</strong>(<a href="../../../Greenter/Model/Client/Client.html"><abbr title="Greenter\Model\Client\Client">Client</abbr></a> $receptor)
+    <strong>setReceptor</strong>(<a href="../../../Greenter/Model/Client/Client.html"><abbr title="Greenter\Model\Client\Client">Client</abbr></a>|null $receptor)
         </code>
     </h3>
     <div class="details">
@@ -463,7 +609,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Greenter/Model/Client/Client.html"><abbr title="Greenter\Model\Client\Client">Client</abbr></a></td>
+                <td><a href="../../../Greenter/Model/Client/Client.html"><abbr title="Greenter\Model\Client\Client">Client</abbr></a>|null</td>
                 <td>$receptor</td>
                 <td></td>
             </tr>
@@ -487,8 +633,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSerie">
-        <div class="location">at         line 142</div>
-        <code>                    mixed
+        <div class="location">
+                        at line 145
+        </div>
+        <code>                    string|null
     <strong>getSerie</strong>()
         </code>
     </h3>
@@ -502,7 +650,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -515,9 +663,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setSerie">
-        <div class="location">at         line 152</div>
+        <div class="location">
+                        at line 155
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setSerie</strong>(mixed $serie)
+    <strong>setSerie</strong>(string|null $serie)
         </code>
     </h3>
     <div class="details">
@@ -529,7 +679,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>string|null</td>
                 <td>$serie</td>
                 <td></td>
             </tr>
@@ -553,8 +703,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCorrelativo">
-        <div class="location">at         line 162</div>
-        <code>                    string
+        <div class="location">
+                        at line 165
+        </div>
+        <code>                    string|null
     <strong>getCorrelativo</strong>()
         </code>
     </h3>
@@ -568,7 +720,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -581,9 +733,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setCorrelativo">
-        <div class="location">at         line 172</div>
+        <div class="location">
+                        at line 175
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setCorrelativo</strong>(string $correlativo)
+    <strong>setCorrelativo</strong>(string|null $correlativo)
         </code>
     </h3>
     <div class="details">
@@ -595,7 +749,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$correlativo</td>
                 <td></td>
             </tr>
@@ -619,8 +773,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFechaEmision">
-        <div class="location">at         line 182</div>
-        <code>                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+        <div class="location">
+                        at line 185
+        </div>
+        <code>                    <a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>|null
     <strong>getFechaEmision</strong>()
         </code>
     </h3>
@@ -634,7 +790,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+            <td><a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>|null</td>
             <td></td>
         </tr>
     </table>
@@ -647,9 +803,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setFechaEmision">
-        <div class="location">at         line 192</div>
+        <div class="location">
+                        at line 195
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setFechaEmision</strong>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $fechaEmision)
+    <strong>setFechaEmision</strong>(<a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>|null $fechaEmision)
         </code>
     </h3>
     <div class="details">
@@ -661,7 +819,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td><a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>|null</td>
                 <td>$fechaEmision</td>
                 <td></td>
             </tr>
@@ -685,8 +843,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getConcepto">
-        <div class="location">at         line 202</div>
-        <code>                    string
+        <div class="location">
+                        at line 205
+        </div>
+        <code>                    string|null
     <strong>getConcepto</strong>()
         </code>
     </h3>
@@ -700,7 +860,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -713,9 +873,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setConcepto">
-        <div class="location">at         line 212</div>
+        <div class="location">
+                        at line 215
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setConcepto</strong>(string $concepto)
+    <strong>setConcepto</strong>(string|null $concepto)
         </code>
     </h3>
     <div class="details">
@@ -727,7 +889,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$concepto</td>
                 <td></td>
             </tr>
@@ -751,8 +913,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMontoLetras">
-        <div class="location">at         line 222</div>
-        <code>                    string
+        <div class="location">
+                        at line 225
+        </div>
+        <code>                    string|null
     <strong>getMontoLetras</strong>()
         </code>
     </h3>
@@ -766,7 +930,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -779,9 +943,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setMontoLetras">
-        <div class="location">at         line 232</div>
+        <div class="location">
+                        at line 235
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setMontoLetras</strong>(string $montoLetras)
+    <strong>setMontoLetras</strong>(string|null $montoLetras)
         </code>
     </h3>
     <div class="details">
@@ -793,7 +959,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$montoLetras</td>
                 <td></td>
             </tr>
@@ -817,8 +983,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSubTotal">
-        <div class="location">at         line 242</div>
-        <code>                    float
+        <div class="location">
+                        at line 245
+        </div>
+        <code>                    float|null
     <strong>getSubTotal</strong>()
         </code>
     </h3>
@@ -832,7 +1000,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>float|null</td>
             <td></td>
         </tr>
     </table>
@@ -845,9 +1013,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setSubTotal">
-        <div class="location">at         line 252</div>
+        <div class="location">
+                        at line 255
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setSubTotal</strong>(float $subTotal)
+    <strong>setSubTotal</strong>(float|null $subTotal)
         </code>
     </h3>
     <div class="details">
@@ -859,7 +1029,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>float</td>
+                <td>float|null</td>
                 <td>$subTotal</td>
                 <td></td>
             </tr>
@@ -883,8 +1053,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRetencion">
-        <div class="location">at         line 262</div>
-        <code>                    float
+        <div class="location">
+                        at line 265
+        </div>
+        <code>                    float|null
     <strong>getRetencion</strong>()
         </code>
     </h3>
@@ -898,7 +1070,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>float|null</td>
             <td></td>
         </tr>
     </table>
@@ -911,9 +1083,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setRetencion">
-        <div class="location">at         line 272</div>
+        <div class="location">
+                        at line 275
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setRetencion</strong>(float $retencion)
+    <strong>setRetencion</strong>(float|null $retencion)
         </code>
     </h3>
     <div class="details">
@@ -925,7 +1099,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>float</td>
+                <td>float|null</td>
                 <td>$retencion</td>
                 <td></td>
             </tr>
@@ -949,8 +1123,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPorcentaje">
-        <div class="location">at         line 282</div>
-        <code>                    float
+        <div class="location">
+                        at line 285
+        </div>
+        <code>                    float|null
     <strong>getPorcentaje</strong>()
         </code>
     </h3>
@@ -964,7 +1140,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>float|null</td>
             <td></td>
         </tr>
     </table>
@@ -977,9 +1153,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPorcentaje">
-        <div class="location">at         line 292</div>
+        <div class="location">
+                        at line 295
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setPorcentaje</strong>(float $porcentaje)
+    <strong>setPorcentaje</strong>(float|null $porcentaje)
         </code>
     </h3>
     <div class="details">
@@ -991,7 +1169,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>float</td>
+                <td>float|null</td>
                 <td>$porcentaje</td>
                 <td></td>
             </tr>
@@ -1015,8 +1193,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTotal">
-        <div class="location">at         line 302</div>
-        <code>                    float
+        <div class="location">
+                        at line 305
+        </div>
+        <code>                    float|null
     <strong>getTotal</strong>()
         </code>
     </h3>
@@ -1030,7 +1210,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>float|null</td>
             <td></td>
         </tr>
     </table>
@@ -1043,9 +1223,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setTotal">
-        <div class="location">at         line 312</div>
+        <div class="location">
+                        at line 315
+        </div>
         <code>                    <a href="../../../Greenter/Model/Sale/Receipt.html"><abbr title="Greenter\Model\Sale\Receipt">Receipt</abbr></a>
-    <strong>setTotal</strong>(float $total)
+    <strong>setTotal</strong>(float|null $total)
         </code>
     </h3>
     <div class="details">
@@ -1057,7 +1239,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>float</td>
+                <td>float|null</td>
                 <td>$total</td>
                 <td></td>
             </tr>
@@ -1081,7 +1263,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">at         line 324</div>
+        <div class="location">
+                        at line 327
+        </div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -1112,11 +1296,13 @@
             </div>
 
     
-            </div>
-                <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/giansalex">@giansalex</a>. Source code can be found on <a href="https://github.com/thegreenter/reference">GitHub</a>.</p>
     </div>
 
+            </div>
         </div>
     </div>
     </body>

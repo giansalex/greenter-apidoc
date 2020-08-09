@@ -5,12 +5,8 @@
     <meta name="robots" content="index, follow, all" />
     <title>Greenter\Validator\MessageTranslator | Greenter API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+        <script src="../../assets/app.min.js"></script>
         <script src="../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
@@ -21,67 +17,71 @@
 
     <body id="class" data-name="class:Greenter_Validator_MessageTranslator" data-root-path="../../">
             <div id="content">
-        <div id="left-column">
-                <div id="control-panel">
+            <nav id="greenter-header" class="navbar navbar-expand-lg">
+        <h1 class="greenter-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://greenter.dev">Greenter</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://community.greenter.dev">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/thegreenter/greenter"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../">master</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="../../search.html" method="GET">
-            <span class="glyphicon glyphicon-search"></span>
-            <input name="search"
-                   class="typeahead form-control"
-                   type="search"
-                   placeholder="Search">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>
 
-                <div id="api-tree"></div>
+                    <div id="api-tree"></div>
 
-        </div>
-        <div id="right-column">
-                <nav id="site-nav" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../index.html">Greenter API</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../classes.html">Classes</a></li>
-                                            <li><a href="../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../traits.html">Traits</a></li>
-                    <li><a href="../../doc-index.html">Index</a></li>
-                    <li><a href="../../search.html">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../search.html">Search</a></li>
+        </ul>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../Greenter.html">Greenter</a></li><li class="backslash">\</li><li><a href="../../Greenter/Validator.html">Validator</a></li><li class="backslash">\</li><li>MessageTranslator</li>
-            </ol>
-        </div>
                 <div id="page-content">
-                
+                    
     <div class="page-header">
         <h1>
             MessageTranslator
                 
+            &nbsp;
+                <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="30" />
+    </a>
+
         </h1>
     </div>
 
     <p>    class
     <strong>MessageTranslator</strong>        implements
-        <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
-</p>
+        <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></p>
 
         
     
@@ -99,61 +99,65 @@
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method___construct">__construct</a>(<a href="../../Greenter/Validator/ErrorCodeProviderInterface.html"><abbr title="Greenter\Validator\ErrorCodeProviderInterface">ErrorCodeProviderInterface</abbr></a> $provider)
         
                                             <p>MessageTranslator constructor.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_addResource">addResource</a>(array $items)
         
                                             <p>Add extra resources.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_trans">trans</a>(string $id, array $parameters = array(), string|null $domain = null, string|null $locale = null)
+                <div class="col-md-6 type">
+                    <a href="#method_trans">trans</a>(string $id, array $parameters = [], string $domain = null, string $locale = null)
         
                                             <p>Translates the given message.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_transChoice">transChoice</a>(string $id, int $number, array $parameters = array(), string|null $domain = null, string|null $locale = null)
-        
-                                            <p>Translates the given choice message by choosing a translation according to a number.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setLocale">setLocale</a>(string $locale)
-        
-                                            <p>Sets the current locale.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getLocale">getLocale</a>()
         
                                             <p>Returns the current locale.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
             </div>
 
@@ -163,7 +167,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 39</div>
+        <div class="location">
+                        at line 40
+        </div>
         <code>                    
     <strong>__construct</strong>(<a href="../../Greenter/Validator/ErrorCodeProviderInterface.html"><abbr title="Greenter\Validator\ErrorCodeProviderInterface">ErrorCodeProviderInterface</abbr></a> $provider)
         </code>
@@ -194,7 +200,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addResource">
-        <div class="location">at         line 49</div>
+        <div class="location">
+                        at line 50
+        </div>
         <code>                    
     <strong>addResource</strong>(array $items)
         </code>
@@ -225,9 +233,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_trans">
-        <div class="location">at         line 66</div>
+        <div class="location">
+                        at line 67
+        </div>
         <code>                    string
-    <strong>trans</strong>(string $id, array $parameters = array(), string|null $domain = null, string|null $locale = null)
+    <strong>trans</strong>(string $id, array $parameters = [], string $domain = null, string $locale = null)
         </code>
     </h3>
     <div class="details">
@@ -251,12 +261,12 @@
                 <td>An array of parameters for the message</td>
             </tr>
                     <tr>
-                <td>string|null</td>
+                <td>string</td>
                 <td>$domain</td>
                 <td>The domain for the message or null to use the default</td>
             </tr>
                     <tr>
-                <td>string|null</td>
+                <td>string</td>
                 <td>$locale</td>
                 <td>The locale or null to use the default</td>
             </tr>
@@ -277,116 +287,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\Exception\InvalidArgumentException">InvalidArgumentException</abbr></td>
-                <td>If the locale contains invalid characters</td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_transChoice">
-        <div class="location">at         line 84</div>
-        <code>                    string
-    <strong>transChoice</strong>(string $id, int $number, array $parameters = array(), string|null $domain = null, string|null $locale = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Translates the given choice message by choosing a translation according to a number.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$id</td>
-                <td>The message id (may also be an object that can be cast to string)</td>
-            </tr>
-                    <tr>
-                <td>int</td>
-                <td>$number</td>
-                <td>The number to use to find the indice of the message</td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$parameters</td>
-                <td>An array of parameters for the message</td>
-            </tr>
-                    <tr>
-                <td>string|null</td>
-                <td>$domain</td>
-                <td>The domain for the message or null to use the default</td>
-            </tr>
-                    <tr>
-                <td>string|null</td>
-                <td>$locale</td>
-                <td>The locale or null to use the default</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td>The translated string</td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Symfony\Component\Translation\Exception\InvalidArgumentException">InvalidArgumentException</abbr></td>
-                <td>If the locale contains invalid characters</td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setLocale">
-        <div class="location">at         line 96</div>
-        <code>                    
-    <strong>setLocale</strong>(string $locale)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Sets the current locale.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$locale</td>
-                <td>The locale</td>
-            </tr>
-            </table>
-
-            
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Symfony\Component\Translation\Exception\InvalidArgumentException">InvalidArgumentException</abbr></td>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
                 <td>If the locale contains invalid characters</td>
             </tr>
             </table>
@@ -398,7 +299,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLocale">
-        <div class="location">at         line 106</div>
+        <div class="location">
+                        at line 77
+        </div>
         <code>                    string
     <strong>getLocale</strong>()
         </code>
@@ -429,11 +332,13 @@
             </div>
 
     
-            </div>
-                <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/giansalex">@giansalex</a>. Source code can be found on <a href="https://github.com/thegreenter/reference">GitHub</a>.</p>
     </div>
 
+            </div>
         </div>
     </div>
     </body>

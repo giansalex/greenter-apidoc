@@ -5,12 +5,8 @@
     <meta name="robots" content="index, follow, all" />
     <title>Greenter\Model\Summary\SummaryPerception | Greenter API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
@@ -21,66 +17,70 @@
 
     <body id="class" data-name="class:Greenter_Model_Summary_SummaryPerception" data-root-path="../../../">
             <div id="content">
-        <div id="left-column">
-                <div id="control-panel">
+            <nav id="greenter-header" class="navbar navbar-expand-lg">
+        <h1 class="greenter-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://greenter.dev">Greenter</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://community.greenter.dev">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/thegreenter/greenter"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="../../../search.html" method="GET">
-            <span class="glyphicon glyphicon-search"></span>
-            <input name="search"
-                   class="typeahead form-control"
-                   type="search"
-                   placeholder="Search">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>
 
-                <div id="api-tree"></div>
+                    <div id="api-tree"></div>
 
-        </div>
-        <div id="right-column">
-                <nav id="site-nav" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../../index.html">Greenter API</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../traits.html">Traits</a></li>
-                    <li><a href="../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../search.html">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Greenter.html">Greenter</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Model.html">Model</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Model/Summary.html">Summary</a></li><li class="backslash">\</li><li>SummaryPerception</li>
-            </ol>
-        </div>
                 <div id="page-content">
-                
+                    
     <div class="page-header">
         <h1>
             SummaryPerception
                 
+            &nbsp;
+                <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
         </h1>
     </div>
 
     <p>    class
-    <strong>SummaryPerception</strong>
-</p>
+    <strong>SummaryPerception</strong></p>
 
         
     
@@ -97,113 +97,173 @@ Perception for Summary.</p>                                </div>
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getCodReg">getCodReg</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setCodReg">setCodReg</a>(string $codReg)
+                <div class="col-md-6 type">
+                    <a href="#method_setCodReg">setCodReg</a>(string|null $codReg)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    float|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getTasa">getTasa</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setTasa">setTasa</a>(float $tasa)
+                <div class="col-md-6 type">
+                    <a href="#method_setTasa">setTasa</a>(float|null $tasa)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    float|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getMtoBase">getMtoBase</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setMtoBase">setMtoBase</a>(float $mtoBase)
+                <div class="col-md-6 type">
+                    <a href="#method_setMtoBase">setMtoBase</a>(float|null $mtoBase)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    float|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getMto">getMto</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setMto">setMto</a>(float $mto)
+                <div class="col-md-6 type">
+                    <a href="#method_setMto">setMto</a>(float|null $mto)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    float|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getMtoTotal">getMtoTotal</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setMtoTotal">setMtoTotal</a>(float $mtoTotal)
+                <div class="col-md-6 type">
+                    <a href="#method_setMtoTotal">setMtoTotal</a>(float|null $mtoTotal)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
             </div>
 
@@ -213,8 +273,10 @@ Perception for Summary.</p>                                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getCodReg">
-        <div class="location">at         line 55</div>
-        <code>                    string
+        <div class="location">
+                        at line 57
+        </div>
+        <code>                    string|null
     <strong>getCodReg</strong>()
         </code>
     </h3>
@@ -228,7 +290,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -241,9 +303,11 @@ Perception for Summary.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setCodReg">
-        <div class="location">at         line 65</div>
+        <div class="location">
+                        at line 67
+        </div>
         <code>                    <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
-    <strong>setCodReg</strong>(string $codReg)
+    <strong>setCodReg</strong>(string|null $codReg)
         </code>
     </h3>
     <div class="details">
@@ -255,7 +319,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$codReg</td>
                 <td></td>
             </tr>
@@ -279,8 +343,10 @@ Perception for Summary.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getTasa">
-        <div class="location">at         line 75</div>
-        <code>                    float
+        <div class="location">
+                        at line 77
+        </div>
+        <code>                    float|null
     <strong>getTasa</strong>()
         </code>
     </h3>
@@ -294,7 +360,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>float|null</td>
             <td></td>
         </tr>
     </table>
@@ -307,9 +373,11 @@ Perception for Summary.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setTasa">
-        <div class="location">at         line 85</div>
+        <div class="location">
+                        at line 87
+        </div>
         <code>                    <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
-    <strong>setTasa</strong>(float $tasa)
+    <strong>setTasa</strong>(float|null $tasa)
         </code>
     </h3>
     <div class="details">
@@ -321,7 +389,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>float</td>
+                <td>float|null</td>
                 <td>$tasa</td>
                 <td></td>
             </tr>
@@ -345,8 +413,10 @@ Perception for Summary.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getMtoBase">
-        <div class="location">at         line 95</div>
-        <code>                    float
+        <div class="location">
+                        at line 97
+        </div>
+        <code>                    float|null
     <strong>getMtoBase</strong>()
         </code>
     </h3>
@@ -360,7 +430,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>float|null</td>
             <td></td>
         </tr>
     </table>
@@ -373,9 +443,11 @@ Perception for Summary.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setMtoBase">
-        <div class="location">at         line 105</div>
+        <div class="location">
+                        at line 107
+        </div>
         <code>                    <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
-    <strong>setMtoBase</strong>(float $mtoBase)
+    <strong>setMtoBase</strong>(float|null $mtoBase)
         </code>
     </h3>
     <div class="details">
@@ -387,7 +459,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>float</td>
+                <td>float|null</td>
                 <td>$mtoBase</td>
                 <td></td>
             </tr>
@@ -411,8 +483,10 @@ Perception for Summary.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getMto">
-        <div class="location">at         line 115</div>
-        <code>                    float
+        <div class="location">
+                        at line 117
+        </div>
+        <code>                    float|null
     <strong>getMto</strong>()
         </code>
     </h3>
@@ -426,7 +500,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>float|null</td>
             <td></td>
         </tr>
     </table>
@@ -439,9 +513,11 @@ Perception for Summary.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setMto">
-        <div class="location">at         line 125</div>
+        <div class="location">
+                        at line 127
+        </div>
         <code>                    <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
-    <strong>setMto</strong>(float $mto)
+    <strong>setMto</strong>(float|null $mto)
         </code>
     </h3>
     <div class="details">
@@ -453,7 +529,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>float</td>
+                <td>float|null</td>
                 <td>$mto</td>
                 <td></td>
             </tr>
@@ -477,8 +553,10 @@ Perception for Summary.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getMtoTotal">
-        <div class="location">at         line 135</div>
-        <code>                    float
+        <div class="location">
+                        at line 137
+        </div>
+        <code>                    float|null
     <strong>getMtoTotal</strong>()
         </code>
     </h3>
@@ -492,7 +570,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>float|null</td>
             <td></td>
         </tr>
     </table>
@@ -505,9 +583,11 @@ Perception for Summary.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setMtoTotal">
-        <div class="location">at         line 145</div>
+        <div class="location">
+                        at line 147
+        </div>
         <code>                    <a href="../../../Greenter/Model/Summary/SummaryPerception.html"><abbr title="Greenter\Model\Summary\SummaryPerception">SummaryPerception</abbr></a>
-    <strong>setMtoTotal</strong>(float $mtoTotal)
+    <strong>setMtoTotal</strong>(float|null $mtoTotal)
         </code>
     </h3>
     <div class="details">
@@ -519,7 +599,7 @@ Perception for Summary.</p>                                </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>float</td>
+                <td>float|null</td>
                 <td>$mtoTotal</td>
                 <td></td>
             </tr>
@@ -544,11 +624,13 @@ Perception for Summary.</p>                                </div>
             </div>
 
     
-            </div>
-                <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/giansalex">@giansalex</a>. Source code can be found on <a href="https://github.com/thegreenter/reference">GitHub</a>.</p>
     </div>
 
+            </div>
         </div>
     </div>
     </body>

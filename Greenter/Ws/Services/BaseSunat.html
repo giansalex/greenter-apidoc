@@ -5,12 +5,8 @@
     <meta name="robots" content="index, follow, all" />
     <title>Greenter\Ws\Services\BaseSunat | Greenter API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
@@ -21,66 +17,70 @@
 
     <body id="class" data-name="class:Greenter_Ws_Services_BaseSunat" data-root-path="../../../">
             <div id="content">
-        <div id="left-column">
-                <div id="control-panel">
+            <nav id="greenter-header" class="navbar navbar-expand-lg">
+        <h1 class="greenter-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://greenter.dev">Greenter</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://community.greenter.dev">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/thegreenter/greenter"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="../../../search.html" method="GET">
-            <span class="glyphicon glyphicon-search"></span>
-            <input name="search"
-                   class="typeahead form-control"
-                   type="search"
-                   placeholder="Search">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>
 
-                <div id="api-tree"></div>
+                    <div id="api-tree"></div>
 
-        </div>
-        <div id="right-column">
-                <nav id="site-nav" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../../index.html">Greenter API</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../traits.html">Traits</a></li>
-                    <li><a href="../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../search.html">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Greenter.html">Greenter</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Ws.html">Ws</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Ws/Services.html">Services</a></li><li class="backslash">\</li><li>BaseSunat</li>
-            </ol>
-        </div>
                 <div id="page-content">
-                
+                    
     <div class="page-header">
         <h1>
             BaseSunat
                 
+            &nbsp;
+                <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
         </h1>
     </div>
 
     <p>    class
-    <strong>BaseSunat</strong>
-</p>
+    <strong>BaseSunat</strong></p>
 
         
     
@@ -107,27 +107,39 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_compressor">
-                                                                                <a href="../../../Greenter/Zip/CompressInterface.html"><abbr title="Greenter\Zip\CompressInterface">CompressInterface</abbr></a>
+                                                                                <a href="../../../Greenter/Zip/CompressInterface.html"><abbr title="Greenter\Zip\CompressInterface">CompressInterface</abbr></a>|null
                 </td>
                 <td>$compressor</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_decompressor">
-                                                                                <a href="../../../Greenter/Zip/DecompressInterface.html"><abbr title="Greenter\Zip\DecompressInterface">DecompressInterface</abbr></a>
+                                                                                <a href="../../../Greenter/Zip/DecompressInterface.html"><abbr title="Greenter\Zip\DecompressInterface">DecompressInterface</abbr></a>|null
                 </td>
                 <td>$decompressor</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_cdrReader">
-                                                                                <a href="../../../Greenter/Ws/Reader/CdrReaderInterface.html"><abbr title="Greenter\Ws\Reader\CdrReaderInterface">CdrReaderInterface</abbr></a>
+                                                                                <a href="../../../Greenter/Ws/Reader/CdrReaderInterface.html"><abbr title="Greenter\Ws\Reader\CdrReaderInterface">CdrReaderInterface</abbr></a>|null
                 </td>
                 <td>$cdrReader</td>
                 <td class="last"></td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
             </table>
 
@@ -139,110 +151,170 @@
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setCodeProvider">setCodeProvider</a>(<a href="../../../Greenter/Validator/ErrorCodeProviderInterface.html"><abbr title="Greenter\Validator\ErrorCodeProviderInterface">ErrorCodeProviderInterface</abbr></a> $codeProvider)
+                <div class="col-md-6 type">
+                    <a href="#method_setCodeProvider">setCodeProvider</a>(<a href="../../../Greenter/Validator/ErrorCodeProviderInterface.html"><abbr title="Greenter\Validator\ErrorCodeProviderInterface">ErrorCodeProviderInterface</abbr></a>|null $codeProvider)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Ws/Services/WsClientInterface.html"><abbr title="Greenter\Ws\Services\WsClientInterface">WsClientInterface</abbr></a>
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getClient">getClient</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Ws/Services/BaseSunat.html"><abbr title="Greenter\Ws\Services\BaseSunat">BaseSunat</abbr></a>
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_setClient">setClient</a>(<a href="../../../Greenter/Ws/Services/WsClientInterface.html"><abbr title="Greenter\Ws\Services\WsClientInterface">WsClientInterface</abbr></a> $client)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a>
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getErrorFromFault">getErrorFromFault</a>(SoapFault $fault)
         
                                             <p>Get error from Fault Exception.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a>
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getErrorByCode">getErrorByCode</a>(string $code, string $optional = &#039;&#039;)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_compress">compress</a>(string $filename, string $xml)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/Model/Response/CdrResponse.html"><abbr title="Greenter\Model\Response\CdrResponse">CdrResponse</abbr></a>
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_extractResponse">extractResponse</a>($zipContent)
+                <div class="col-md-6 type">
+                    <a href="#method_extractResponse">extractResponse</a>(string $zipContent)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getMessageError">getMessageError</a>($code)
+                <div class="col-md-6 type">
+                    <a href="#method_getMessageError">getMessageError</a>(string $code)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_isExceptionCode">isExceptionCode</a>($code)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_loadErrorByCode">loadErrorByCode</a>(<a href="../../../Greenter/Model/Response/BillResult.html"><abbr title="Greenter\Model\Response\BillResult">BillResult</abbr></a> $result, $code)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
             </div>
 
@@ -252,9 +324,11 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_setCodeProvider">
-        <div class="location">at         line 57</div>
+        <div class="location">
+                        at line 60
+        </div>
         <code>                    
-    <strong>setCodeProvider</strong>(<a href="../../../Greenter/Validator/ErrorCodeProviderInterface.html"><abbr title="Greenter\Validator\ErrorCodeProviderInterface">ErrorCodeProviderInterface</abbr></a> $codeProvider)
+    <strong>setCodeProvider</strong>(<a href="../../../Greenter/Validator/ErrorCodeProviderInterface.html"><abbr title="Greenter\Validator\ErrorCodeProviderInterface">ErrorCodeProviderInterface</abbr></a>|null $codeProvider)
         </code>
     </h3>
     <div class="details">
@@ -266,7 +340,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Greenter/Validator/ErrorCodeProviderInterface.html"><abbr title="Greenter\Validator\ErrorCodeProviderInterface">ErrorCodeProviderInterface</abbr></a></td>
+                <td><a href="../../../Greenter/Validator/ErrorCodeProviderInterface.html"><abbr title="Greenter\Validator\ErrorCodeProviderInterface">ErrorCodeProviderInterface</abbr></a>|null</td>
                 <td>$codeProvider</td>
                 <td></td>
             </tr>
@@ -281,7 +355,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getClient">
-        <div class="location">at         line 65</div>
+        <div class="location">
+                        at line 68
+        </div>
         <code>                    <a href="../../../Greenter/Ws/Services/WsClientInterface.html"><abbr title="Greenter\Ws\Services\WsClientInterface">WsClientInterface</abbr></a>
     <strong>getClient</strong>()
         </code>
@@ -309,7 +385,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setClient">
-        <div class="location">at         line 75</div>
+        <div class="location">
+                        at line 78
+        </div>
         <code>                    <a href="../../../Greenter/Ws/Services/BaseSunat.html"><abbr title="Greenter\Ws\Services\BaseSunat">BaseSunat</abbr></a>
     <strong>setClient</strong>(<a href="../../../Greenter/Ws/Services/WsClientInterface.html"><abbr title="Greenter\Ws\Services\WsClientInterface">WsClientInterface</abbr></a> $client)
         </code>
@@ -347,7 +425,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getErrorFromFault">
-        <div class="location">at         line 89</div>
+        <div class="location">
+                        at line 92
+        </div>
         <code>            protected        <a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a>
     <strong>getErrorFromFault</strong>(SoapFault $fault)
         </code>
@@ -387,7 +467,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getErrorByCode">
-        <div class="location">at         line 106</div>
+        <div class="location">
+                        at line 109
+        </div>
         <code>            protected        <a href="../../../Greenter/Model/Response/Error.html"><abbr title="Greenter\Model\Response\Error">Error</abbr></a>
     <strong>getErrorByCode</strong>(string $code, string $optional = &#039;&#039;)
         </code>
@@ -430,7 +512,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_compress">
-        <div class="location">at         line 130</div>
+        <div class="location">
+                        at line 133
+        </div>
         <code>            protected        string
     <strong>compress</strong>(string $filename, string $xml)
         </code>
@@ -473,9 +557,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_extractResponse">
-        <div class="location">at         line 144</div>
+        <div class="location">
+                        at line 147
+        </div>
         <code>            protected        <a href="../../../Greenter/Model/Response/CdrResponse.html"><abbr title="Greenter\Model\Response\CdrResponse">CdrResponse</abbr></a>
-    <strong>extractResponse</strong>($zipContent)
+    <strong>extractResponse</strong>(string $zipContent)
         </code>
     </h3>
     <div class="details">
@@ -487,7 +573,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$zipContent</td>
                 <td></td>
             </tr>
@@ -511,9 +597,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMessageError">
-        <div class="location">at         line 160</div>
+        <div class="location">
+                        at line 163
+        </div>
         <code>            protected        string
-    <strong>getMessageError</strong>($code)
+    <strong>getMessageError</strong>(string $code)
         </code>
     </h3>
     <div class="details">
@@ -525,7 +613,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$code</td>
                 <td></td>
             </tr>
@@ -549,7 +637,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isExceptionCode">
-        <div class="location">at         line 169</div>
+        <div class="location">
+                        at line 172
+        </div>
         <code>            protected        
     <strong>isExceptionCode</strong>($code)
         </code>
@@ -578,7 +668,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_loadErrorByCode">
-        <div class="location">at         line 176</div>
+        <div class="location">
+                        at line 179
+        </div>
         <code>            protected        
     <strong>loadErrorByCode</strong>(<a href="../../../Greenter/Model/Response/BillResult.html"><abbr title="Greenter\Model\Response\BillResult">BillResult</abbr></a> $result, $code)
         </code>
@@ -613,11 +705,13 @@
             </div>
 
     
-            </div>
-                <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/giansalex">@giansalex</a>. Source code can be found on <a href="https://github.com/thegreenter/reference">GitHub</a>.</p>
     </div>
 
+            </div>
         </div>
     </div>
     </body>

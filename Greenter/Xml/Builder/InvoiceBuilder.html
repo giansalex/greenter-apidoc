@@ -5,12 +5,8 @@
     <meta name="robots" content="index, follow, all" />
     <title>Greenter\Xml\Builder\InvoiceBuilder | Greenter API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
@@ -21,67 +17,71 @@
 
     <body id="class" data-name="class:Greenter_Xml_Builder_InvoiceBuilder" data-root-path="../../../">
             <div id="content">
-        <div id="left-column">
-                <div id="control-panel">
+            <nav id="greenter-header" class="navbar navbar-expand-lg">
+        <h1 class="greenter-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://greenter.dev">Greenter</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://community.greenter.dev">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/thegreenter/greenter"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="../../../search.html" method="GET">
-            <span class="glyphicon glyphicon-search"></span>
-            <input name="search"
-                   class="typeahead form-control"
-                   type="search"
-                   placeholder="Search">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>
 
-                <div id="api-tree"></div>
+                    <div id="api-tree"></div>
 
-        </div>
-        <div id="right-column">
-                <nav id="site-nav" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../../index.html">Greenter API</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../traits.html">Traits</a></li>
-                    <li><a href="../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../search.html">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Greenter.html">Greenter</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Xml.html">Xml</a></li><li class="backslash">\</li><li><a href="../../../Greenter/Xml/Builder.html">Builder</a></li><li class="backslash">\</li><li>InvoiceBuilder</li>
-            </ol>
-        </div>
                 <div id="page-content">
-                
+                    
     <div class="page-header">
         <h1>
             InvoiceBuilder
                 
+            &nbsp;
+                <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
         </h1>
     </div>
 
     <p>    class
     <strong>InvoiceBuilder</strong>        extends <a href="../../../Greenter/Xml/Builder/TwigBuilder.html"><abbr title="Greenter\Xml\Builder\TwigBuilder">TwigBuilder</abbr></a>        implements
-        <a href="../../../Greenter/Builder/BuilderInterface.html"><abbr title="Greenter\Builder\BuilderInterface">BuilderInterface</abbr></a>
-</p>
+        <a href="../../../Greenter/Builder/BuilderInterface.html"><abbr title="Greenter\Builder\BuilderInterface">BuilderInterface</abbr></a></p>
 
         
     
@@ -101,6 +101,10 @@
                 <td>$twig</td>
                 <td class="last"></td>
                 <td><small>from&nbsp;<a href="../../../Greenter/Xml/Builder/TwigBuilder.html#property_twig"><abbr title="Greenter\Xml\Builder\TwigBuilder">TwigBuilder</abbr></a></small></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
             </table>
 
@@ -112,32 +116,50 @@
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method___construct">__construct</a>(array $options = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_render">render</a>(string $template, object $doc)
         
                                             <p>Get Content XML from template.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Greenter/Xml/Builder/TwigBuilder.html#method_render"><abbr title="Greenter\Xml\Builder\TwigBuilder">TwigBuilder</abbr></a></small></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_build">build</a>(<a href="../../../Greenter/Model/DocumentInterface.html"><abbr title="Greenter\Model\DocumentInterface">DocumentInterface</abbr></a> $document)
         
                                             <p>Create xml for document.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
             </div>
 
@@ -147,7 +169,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 25</div>
+        <div class="location">
+                        at line 27
+        </div>
         <code>                    
     <strong>__construct</strong>(array $options = [])
         </code>
@@ -163,7 +187,7 @@
                     <tr>
                 <td>array</td>
                 <td>$options</td>
-                <td>[optional] Recommended: 'cache' => '/dir/cache'</td>
+                <td>[optional] Recommended: &#039;cache&#039; =&gt; &#039;/dir/cache&#039;</td>
             </tr>
             </table>
 
@@ -176,7 +200,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render">
-        <div class="location">in <a href="../../../Greenter/Xml/Builder/TwigBuilder.html#method_render"><abbr title="Greenter\Xml\Builder\TwigBuilder">TwigBuilder</abbr></a> at         line 44</div>
+        <div class="location">
+                            in <a href="../../../Greenter/Xml/Builder/TwigBuilder.html#method_render"><abbr title="Greenter\Xml\Builder\TwigBuilder">TwigBuilder</abbr></a>
+                        at line 46
+        </div>
         <code>                    string
     <strong>render</strong>(string $template, object $doc)
         </code>
@@ -221,8 +248,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_build">
-        <div class="location">at         line 41</div>
-        <code>                    string
+        <div class="location">
+                        at line 43
+        </div>
+        <code>                    string|null
     <strong>build</strong>(<a href="../../../Greenter/Model/DocumentInterface.html"><abbr title="Greenter\Model\DocumentInterface">DocumentInterface</abbr></a> $document)
         </code>
     </h3>
@@ -248,7 +277,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td>Content File</td>
         </tr>
     </table>
@@ -271,11 +300,13 @@
             </div>
 
     
-            </div>
-                <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/giansalex">@giansalex</a>. Source code can be found on <a href="https://github.com/thegreenter/reference">GitHub</a>.</p>
     </div>
 
+            </div>
         </div>
     </div>
     </body>

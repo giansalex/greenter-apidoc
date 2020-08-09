@@ -5,12 +5,8 @@
     <meta name="robots" content="index, follow, all" />
     <title>Greenter\XMLSecLibs\Sunat\SignedXml | Greenter API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
+        <script src="../../../assets/app.min.js"></script>
         <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
@@ -21,66 +17,70 @@
 
     <body id="class" data-name="class:Greenter_XMLSecLibs_Sunat_SignedXml" data-root-path="../../../">
             <div id="content">
-        <div id="left-column">
-                <div id="control-panel">
+            <nav id="greenter-header" class="navbar navbar-expand-lg">
+        <h1 class="greenter-title navbar-brand"></h1>
+
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://greenter.dev">Greenter</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://community.greenter.dev">Forum</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../../../">PHP</a></li>
+                <li class="nav-item"><a class="nav-link icon icon-github-circled" target="_blank" href="https://github.com/thegreenter/greenter"></a></li>
+            </ul>
+        </div>
+
+         <ul class="my-2 my-lg-0">
+            <li class="version nav-item">
+                <a href="../../../../">master</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div>
+            <div id="left-column">
+                    <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
         <form id="search-form" action="../../../search.html" method="GET">
-            <span class="glyphicon glyphicon-search"></span>
-            <input name="search"
-                   class="typeahead form-control"
-                   type="search"
-                   placeholder="Search">
+            <span class="icon icon-search"></span>
+            <input name="search" class="typeahead form-control" type="search" placeholder="Search">
         </form>
     </div>
 
-                <div id="api-tree"></div>
+                    <div id="api-tree"></div>
 
-        </div>
-        <div id="right-column">
-                <nav id="site-nav" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../../index.html">Greenter API</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../traits.html">Traits</a></li>
-                    <li><a href="../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../search.html">Search</a></li>
-                </ul>
-            </div>
-        </div>
+            <div id="right-column">
+                    <nav id="site-nav" class="navbar navbar-expand" role="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../../classes.html">Classes</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="../../../namespaces.html">Namespaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../../interfaces.html">Interfaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../traits.html">Traits</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../doc-index.html">Index</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../../search.html">Search</a></li>
+        </ul>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Greenter.html">Greenter</a></li><li class="backslash">\</li><li><a href="../../../Greenter/XMLSecLibs.html">XMLSecLibs</a></li><li class="backslash">\</li><li><a href="../../../Greenter/XMLSecLibs/Sunat.html">Sunat</a></li><li class="backslash">\</li><li>SignedXml</li>
-            </ol>
-        </div>
                 <div id="page-content">
-                
+                    
     <div class="page-header">
         <h1>
             SignedXml
                 
+            &nbsp;
+                <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="30" />
+    </a>
+
         </h1>
     </div>
 
     <p>    class
-    <strong>SignedXml</strong>
-</p>
+    <strong>SignedXml</strong></p>
 
         
     
@@ -119,6 +119,10 @@
                 <td>$privateKey</td>
                 <td class="last">Private key.</td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_publicKey">
@@ -127,6 +131,10 @@
                 <td>$publicKey</td>
                 <td class="last">Public key.</td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_keyAlgorithm">
@@ -135,6 +143,10 @@
                 <td>$keyAlgorithm</td>
                 <td class="last">Signature algorithm URI. By default RSA with SHA1.</td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_digestAlgorithm">
@@ -143,6 +155,10 @@
                 <td>$digestAlgorithm</td>
                 <td class="last">Digest algorithm URI. By default SHA1.</td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
                     <tr>
                 <td class="type" id="property_canonicalMethod">
@@ -151,6 +167,10 @@
                 <td>$canonicalMethod</td>
                 <td class="last">Canonical algorithm URI. By default C14N.</td>
                 <td></td>
+                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+</td>
             </tr>
             </table>
 
@@ -162,105 +182,165 @@
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_signXml">signXml</a>(string $content)
         
                                             <p>Firma el contenido del xml y retorna el contenido firmado.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     bool
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_verifyXml">verifyXml</a>(string $content)
         
                                             <p>Verifica la firma del xml.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_setCertificate">setCertificate</a>(string $cert)
         
                                             <p>Set certificated in PEM format</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_setCertificateFromFile">setCertificateFromFile</a>(string $filename)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_getPublicKey">getPublicKey</a>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_sign">sign</a>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $data)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_signFromFile">signFromFile</a>(string $filename)
         
                                             <p>Sign from file.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_verify">verify</a>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $data)
         
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <a href="../../../Greenter/XMLSecLibs/XMLSecurityDSig.html"><abbr title="Greenter\XMLSecLibs\XMLSecurityDSig">XMLSecurityDSig</abbr></a>
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_createXmlSecurityDSig">createXmlSecurityDSig</a>()
         
                                             <p>Create the XMLSecurityDSig class.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     bool
                 </div>
-                <div class="col-md-8 type">
+                <div class="col-md-6 type">
                     <a href="#method_setPublicKeyFromNode">setPublicKeyFromNode</a>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc)
         
                                             <p>Try to extract the public key from DOM node.</p>                </div>
                 <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
             </div>
             </div>
 
@@ -270,7 +350,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_signXml">
-        <div class="location">at         line 66</div>
+        <div class="location">
+                        at line 66
+        </div>
         <code>                    string
     <strong>signXml</strong>(string $content)
         </code>
@@ -310,7 +392,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_verifyXml">
-        <div class="location">at         line 80</div>
+        <div class="location">
+                        at line 80
+        </div>
         <code>                    bool
     <strong>verifyXml</strong>(string $content)
         </code>
@@ -350,7 +434,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setCertificate">
-        <div class="location">at         line 92</div>
+        <div class="location">
+                        at line 92
+        </div>
         <code>                    
     <strong>setCertificate</strong>(string $cert)
         </code>
@@ -381,7 +467,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setCertificateFromFile">
-        <div class="location">at         line 101</div>
+        <div class="location">
+                        at line 101
+        </div>
         <code>                    
     <strong>setCertificateFromFile</strong>(string $filename)
         </code>
@@ -410,7 +498,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPublicKey">
-        <div class="location">at         line 113</div>
+        <div class="location">
+                        at line 113
+        </div>
         <code>                    
     <strong>getPublicKey</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc = null)
         </code>
@@ -439,7 +529,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sign">
-        <div class="location">at         line 125</div>
+        <div class="location">
+                        at line 125
+        </div>
         <code>                    
     <strong>sign</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $data)
         </code>
@@ -468,7 +560,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_signFromFile">
-        <div class="location">at         line 157</div>
+        <div class="location">
+                        at line 157
+        </div>
         <code>                    string
     <strong>signFromFile</strong>(string $filename)
         </code>
@@ -508,7 +602,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_verify">
-        <div class="location">at         line 169</div>
+        <div class="location">
+                        at line 169
+        </div>
         <code>                    
     <strong>verify</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $data)
         </code>
@@ -537,7 +633,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createXmlSecurityDSig">
-        <div class="location">at         line 223</div>
+        <div class="location">
+                        at line 223
+        </div>
         <code>            protected        <a href="../../../Greenter/XMLSecLibs/XMLSecurityDSig.html"><abbr title="Greenter\XMLSecLibs\XMLSecurityDSig">XMLSecurityDSig</abbr></a>
     <strong>createXmlSecurityDSig</strong>()
         </code>
@@ -567,7 +665,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPublicKeyFromNode">
-        <div class="location">at         line 241</div>
+        <div class="location">
+                        at line 241
+        </div>
         <code>            protected        bool
     <strong>setPublicKeyFromNode</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc)
         </code>
@@ -595,7 +695,7 @@
                     <table class="table table-condensed">
         <tr>
             <td>bool</td>
-            <td><code>true</code> If public key was extracted or <code>false</code> if cannot be possible</td>
+            <td>&lt;code&gt;true&lt;/code&gt; If public key was extracted or &lt;code&gt;false&lt;/code&gt; if cannot be possible</td>
         </tr>
     </table>
 
@@ -634,11 +734,13 @@
             </div>
 
     
-            </div>
-                <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+                </div>
+                    <div id="footer">
+        <p>Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.</p>
+        <p>Created by <a href="https://github.com/giansalex">@giansalex</a>. Source code can be found on <a href="https://github.com/thegreenter/reference">GitHub</a>.</p>
     </div>
 
+            </div>
         </div>
     </div>
     </body>
