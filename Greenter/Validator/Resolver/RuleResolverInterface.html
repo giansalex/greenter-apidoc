@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Greenter\Validator\Loader\SummaryLoader | Greenter API</title>
+    <title>Greenter\Validator\Resolver\RuleResolverInterface | Greenter API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Greenter_Validator_Loader_SummaryLoader" data-root-path="../../../">
+    <body id="class" data-name="class:Greenter_Validator_Resolver_RuleResolverInterface" data-root-path="../../../">
             <div id="content">
             <nav id="greenter-header" class="navbar navbar-expand-lg">
         <h1 class="greenter-title navbar-brand"></h1>
@@ -69,7 +69,7 @@
                     
     <div class="page-header">
         <h1>
-            SummaryLoader
+            RuleResolverInterface
                 
             &nbsp;
                 <a href="https://github.com/thegreenter/greenter/" target="_blank">
@@ -79,9 +79,8 @@
         </h1>
     </div>
 
-    <p>    class
-    <strong>SummaryLoader</strong>        implements
-        <a href="../../../Greenter/Validator/Metadata/LoaderMetadataInterface.html"><abbr title="Greenter\Validator\Metadata\LoaderMetadataInterface">LoaderMetadataInterface</abbr></a></p>
+    <p>    interface
+    <strong>RuleResolverInterface</strong></p>
 
         
     
@@ -95,10 +94,10 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string|null
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_load">load</a>(<abbr title="Symfony\Component\Validator\Mapping\ClassMetadata">ClassMetadata</abbr> $metadata)
+                    <a href="#method_getPath">getPath</a>(string|null $typeDoc)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -117,12 +116,12 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_load">
+                    <h3 id="method_getPath">
         <div class="location">
-                        at line 20
+                        at line 9
         </div>
-        <code>                    
-    <strong>load</strong>(<abbr title="Symfony\Component\Validator\Mapping\ClassMetadata">ClassMetadata</abbr> $metadata)
+        <code>                    string|null
+    <strong>getPath</strong>(string|null $typeDoc)
         </code>
     </h3>
     <div class="details">
@@ -134,13 +133,22 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Symfony\Component\Validator\Mapping\ClassMetadata">ClassMetadata</abbr></td>
-                <td>$metadata</td>
+                <td>string|null</td>
+                <td>$typeDoc</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

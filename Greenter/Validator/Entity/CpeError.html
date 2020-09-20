@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Greenter\XMLSecLibs\Sunat\SignedXml | Greenter API</title>
+    <title>Greenter\Validator\Entity\CpeError | Greenter API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../assets/app.min.css">
         <script src="../../../assets/app.min.js"></script>
@@ -15,7 +15,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Greenter_XMLSecLibs_Sunat_SignedXml" data-root-path="../../../">
+    <body id="class" data-name="class:Greenter_Validator_Entity_CpeError" data-root-path="../../../">
             <div id="content">
             <nav id="greenter-header" class="navbar navbar-expand-lg">
         <h1 class="greenter-title navbar-brand"></h1>
@@ -69,7 +69,7 @@
                     
     <div class="page-header">
         <h1>
-            SignedXml
+            CpeError
                 
             &nbsp;
                 <a href="https://github.com/thegreenter/greenter/" target="_blank">
@@ -80,158 +80,24 @@
     </div>
 
     <p>    class
-    <strong>SignedXml</strong></p>
+    <strong>CpeError</strong></p>
 
         
     
 
-            <div class="description">
-            <p>Class SignedXml</p>                                </div>
     
     
-            <h2>Constants</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td>ENVELOPED</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>EXT_NS</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-            </table>
-
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_privateKey">
-                                        protected                                        string
-                </td>
-                <td>$privateKey</td>
-                <td class="last">Private key.</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_publicKey">
-                                        protected                                        string
-                </td>
-                <td>$publicKey</td>
-                <td class="last">Public key.</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_keyAlgorithm">
-                                        protected                                        string
-                </td>
-                <td>$keyAlgorithm</td>
-                <td class="last">Signature algorithm URI. By default RSA with SHA1.</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_digestAlgorithm">
-                                        protected                                        string
-                </td>
-                <td>$digestAlgorithm</td>
-                <td class="last">Digest algorithm URI. By default SHA1.</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_canonicalMethod">
-                                        protected                                        string
-                </td>
-                <td>$canonicalMethod</td>
-                <td class="last">Canonical algorithm URI. By default C14N.</td>
-                <td></td>
-                <td width="24px">    <a href="https://github.com/thegreenter/greenter/" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-</td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    string|null
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_signXml">signXml</a>(string $content)
-        
-                                            <p>Firma el contenido del xml y retorna el contenido firmado.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    bool
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_verifyXml">verifyXml</a>(string $content)
-        
-                                            <p>Verifica la firma del xml.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_setCertificate">setCertificate</a>(string $cert)
-        
-                                            <p>Set certificated in PEM format</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_setCertificateFromFile">setCertificateFromFile</a>(string $filename)
+                    <a href="#method_getCode">getCode</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -245,10 +111,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_getPublicKey">getPublicKey</a>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc = null)
+                    <a href="#method_setCode">setCode</a>(string|null $code)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -262,10 +128,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string|null
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_sign">sign</a>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $data)
+                    <a href="#method_getMessage">getMessage</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -279,26 +145,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_signFromFile">signFromFile</a>(string $filename)
-        
-                                            <p>Sign from file.</p>                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 text-right" style="padding-right: 5px;">
-                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
-        <img src="../../../assets/img/code.svg" height="18" />
-    </a>
-
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-6 type">
-                    <a href="#method_verify">verify</a>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $data)
+                    <a href="#method_setMessage">setMessage</a>(string|null $message)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -312,12 +162,13 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Greenter/XMLSecLibs/XMLSecurityDSig.html"><abbr title="Greenter\XMLSecLibs\XMLSecurityDSig">XMLSecurityDSig</abbr></a>
+                    string|null
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_createXmlSecurityDSig">createXmlSecurityDSig</a>()
+                    <a href="#method_getLevel">getLevel</a>()
         
-                                            <p>Create the XMLSecurityDSig class.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/thegreenter/greenter/" target="_blank">
@@ -328,12 +179,81 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
                 </div>
                 <div class="col-md-6 type">
-                    <a href="#method_setPublicKeyFromNode">setPublicKeyFromNode</a>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc)
+                    <a href="#method_setLevel">setLevel</a>(string|null $level)
         
-                                            <p>Try to extract the public key from DOM node.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getNodePath">getNodePath</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setNodePath">setNodePath</a>(string|null $nodePath)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getNodeValue">getNodeValue</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 text-right" style="padding-right: 5px;">
+                        <a href="https://github.com/thegreenter/greenter/" target="_blank">
+        <img src="../../../assets/img/code.svg" height="18" />
+    </a>
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_setNodeValue">setNodeValue</a>(string|null $nodeValue)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2 text-right" style="padding-right: 5px;">
                         <a href="https://github.com/thegreenter/greenter/" target="_blank">
@@ -349,37 +269,25 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_signXml">
+                    <h3 id="method_getCode">
         <div class="location">
-                        at line 66
+                        at line 33
         </div>
-        <code>                    string
-    <strong>signXml</strong>(string $content)
+        <code>                    string|null
+    <strong>getCode</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Firma el contenido del xml y retorna el contenido firmado.</p>                                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$content</td>
-                <td></td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -391,27 +299,25 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_verifyXml">
+                    <h3 id="method_setCode">
         <div class="location">
-                        at line 80
+                        at line 42
         </div>
-        <code>                    bool
-    <strong>verifyXml</strong>(string $content)
+        <code>                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
+    <strong>setCode</strong>(string|null $code)
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Verifica la firma del xml.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$content</td>
+                <td>string|null</td>
+                <td>$code</td>
                 <td></td>
             </tr>
             </table>
@@ -421,7 +327,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td><a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -433,45 +339,12 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setCertificate">
+                    <h3 id="method_getMessage">
         <div class="location">
-                        at line 92
+                        at line 51
         </div>
-        <code>                    
-    <strong>setCertificate</strong>(string $cert)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Set certificated in PEM format</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$cert</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setCertificateFromFile">
-        <div class="location">
-                        at line 101
-        </div>
-        <code>                    
-    <strong>setCertificateFromFile</strong>(string $filename)
+        <code>                    string|null
+    <strong>getMessage</strong>()
         </code>
     </h3>
     <div class="details">
@@ -479,117 +352,12 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$filename</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getPublicKey">
-        <div class="location">
-                        at line 113
-        </div>
-        <code>                    
-    <strong>getPublicKey</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a></td>
-                <td>$doc</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_sign">
-        <div class="location">
-                        at line 125
-        </div>
-        <code>                    
-    <strong>sign</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $data)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a></td>
-                <td>$data</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_signFromFile">
-        <div class="location">
-                        at line 157
-        </div>
-        <code>                    string
-    <strong>signFromFile</strong>(string $filename)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Sign from file.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$filename</td>
-                <td></td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -601,12 +369,12 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_verify">
+                    <h3 id="method_setMessage">
         <div class="location">
-                        at line 169
+                        at line 60
         </div>
-        <code>                    
-    <strong>verify</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $data)
+        <code>                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
+    <strong>setMessage</strong>(string|null $message)
         </code>
     </h3>
     <div class="details">
@@ -618,41 +386,18 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a></td>
-                <td>$data</td>
+                <td>string|null</td>
+                <td>$message</td>
                 <td></td>
             </tr>
             </table>
 
             
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_createXmlSecurityDSig">
-        <div class="location">
-                        at line 223
-        </div>
-        <code>            protected        <a href="../../../Greenter/XMLSecLibs/XMLSecurityDSig.html"><abbr title="Greenter\XMLSecLibs\XMLSecurityDSig">XMLSecurityDSig</abbr></a>
-    <strong>createXmlSecurityDSig</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Create the XMLSecurityDSig class.</p>                                                </div>
-                <div class="tags">
-            
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Greenter/XMLSecLibs/XMLSecurityDSig.html"><abbr title="Greenter\XMLSecLibs\XMLSecurityDSig">XMLSecurityDSig</abbr></a></td>
+            <td><a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -664,27 +409,55 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setPublicKeyFromNode">
+                    <h3 id="method_getLevel">
         <div class="location">
-                        at line 241
+                        at line 69
         </div>
-        <code>            protected        bool
-    <strong>setPublicKeyFromNode</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc)
+        <code>                    string|null
+    <strong>getLevel</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Try to extract the public key from DOM node.</p>                    <p>Sets publicKey and keyAlgorithm properties if success.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLevel">
+        <div class="location">
+                        at line 78
+        </div>
+        <code>                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
+    <strong>setLevel</strong>(string|null $level)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a></td>
-                <td>$doc</td>
+                <td>string|null</td>
+                <td>$level</td>
                 <td></td>
             </tr>
             </table>
@@ -694,27 +467,153 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
-            <td>&lt;code&gt;true&lt;/code&gt; If public key was extracted or &lt;code&gt;false&lt;/code&gt; if cannot be possible</td>
+            <td><a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
             
-                            <h4>Exceptions</h4>
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNodePath">
+        <div class="location">
+                        at line 87
+        </div>
+        <code>                    string|null
+    <strong>getNodePath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNodePath">
+        <div class="location">
+                        at line 96
+        </div>
+        <code>                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
+    <strong>setNodePath</strong>(string|null $nodePath)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>string|null</td>
+                <td>$nodePath</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>See also</h4>
+                            <h4>Return Value</h4>
 
                     <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNodeValue">
+        <div class="location">
+                        at line 105
+        </div>
+        <code>                    string|null
+    <strong>getNodeValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNodeValue">
+        <div class="location">
+                        at line 114
+        </div>
+        <code>                    <a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a>
+    <strong>setNodeValue</strong>(string|null $nodeValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$nodeValue</td>
+                <td></td>
+            </tr>
             </table>
 
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Greenter/Validator/Entity/CpeError.html"><abbr title="Greenter\Validator\Entity\CpeError">CpeError</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
                     </div>
     </div>
 
