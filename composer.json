@@ -2,7 +2,7 @@
     "name": "greenter/api-reference",
     "description": "Referencia de greenter packages",
     "require": {
-        "greenter/greenter": "^4.0"
+        "greenter/greenter": "^4.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
